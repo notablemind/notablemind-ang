@@ -1,0 +1,9 @@
+* One'
+  :PROPERTIES:
+  :slug: fred-the-wizard
+  :other: one two
+  :third:  thing
+  :END:
+-----
+[{"title":"One", "tags": [],
+  "properties":{"slug": "fred-the-wizard", "other": "one two", "third": "thing"}, "children":[]}]
