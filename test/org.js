@@ -1,7 +1,9 @@
 
 var expect = require('chai').expect
   , fs = require('fs')
-  , org = require('../lib/org');
+  , path = require('path')
+  , wrench = require('wrench')
+  , org = process.env.EXPRESS_COV ? require('../lib-cov/org') : require('../lib/org');
 
 describe('tolines', function(){
   it('should do null right', function(){
@@ -112,7 +114,6 @@ describe('starify', function(){
   });
 });
 
- 
 describe('serialize', function(){
   describe('when given in/out files', function(){
     var files = fs.readdirSync(__dirname + '/org/starify');
@@ -134,3 +135,104 @@ describe('serialize', function(){
     });
   });
 });
+
+describe('make_slug', function(){
+  it('should get at least three', function(){
+    expect(org.make_slug('One Two three fOUR', [])).to.eql('one-two-three');
+  });
+  it('should accept fewer', function(){
+    expect(org.make_slug('onE', [])).to.eql('one');
+  });
+  it('should strip chars', function(){
+    expect(org.make_slug('o_n!@^#&*%--\\+e', [])).to.eql('one');
+  });
+  it('should go longer if needed', function(){
+    expect(org.make_slug('one two three four', ['one-two-three'])).to.eql('one-two-three-four');
+  });
+  it('should be ultimately ok with a dup', function(){
+    expect(org.make_slug('one two', ['one-two'])).to.eql('one-two');
+  });
+});
+
+describe('tree_filter', function(){
+  it('should do empty', function(){
+    expect(org.tree_filter([], function(){})).to.eql([]);
+  });
+  it('should work flat', function(){
+    var children = [];
+    for (var i=0;i<10;i++){
+      children.push({id:i,children:[]});
+    }
+    expect(org.tree_filter(children, function(c){
+      return Math.floor(c.id/2)*2==c.id;
+    }).length).to.eql(5);
+  });
+  it('should go deeper', function(){
+    var children = [], obj, tobj;
+    for (var i=0;i<5;i++){
+      obj = {id:i,children:[]};
+      children.push(obj);
+      for (var j=0; j<i; j++) {
+        tobj = {id:i*10+j, children:[]};
+        obj.children.push(tobj);
+        obj = tobj;
+      }
+    }
+    // 0; 1 10; 2 20 21; 3 30 31 32; 4 40 41 42 43
+    expect(org.tree_filter(children, function(c){
+      return Math.floor(c.id/2)*2==c.id;
+    }).length).to.eql(9);
+  });
+});
+
+describe('promote()', function(){
+  describe('when given in/out files', function(){
+    var tmp = path.join(__dirname, 'tmp-promote');
+    beforeEach(function(){
+      if (fs.existsSync(tmp))
+        wrench.rmdirSyncRecursive(tmp, true);
+      fs.mkdirSync(tmp);
+    });
+    afterEach(function(){
+      wrench.rmdirSyncRecursive(tmp, true);
+    });
+
+    var setup = function(name, data, tmp) {
+      var split = data.split('\n=====\n');
+      split[0].split('\n-----\n').forEach(function(part){
+        var lines = part.split('\n');
+        var fname = path.join(tmp, lines[0])
+          , dir = path.dirname(fname);
+        if (!fs.existsSync(dir)) {
+          wrench.mkdirSyncRecursive(dir, 0777);
+        }
+        fs.writeFileSync(fname, lines.slice(1).join('\n'));
+      });
+        
+      var bot_files = {};
+      split[1].split('\n-----\n').forEach(function(part){
+        var lines = part.split('\n');
+        bot_files[lines[0]] = org.starify(lines.slice(1), lines[0], true).children;
+      });
+      return bot_files;
+    };
+
+    var place = path.join(__dirname, 'org', 'promote');
+
+    var files = fs.readdirSync(place);
+    files.forEach(function(fname){
+      if (fname[0] === '.' || fname.slice(-4) !== '.txt') return;
+      it('should promote ' + fname + ' correctly', function(){
+        var input = fs.readFileSync(path.join(place, fname), {encoding: 'utf8'});
+        var files = setup(fname, input, tmp);
+        org.promote(tmp, 1);
+        Object.keys(files).forEach(function(fname){
+          expect(org.read(path.join(tmp, fname)).children).to.eql(files[fname]);
+        });
+      });
+    });
+  });
+});
+  
+
+

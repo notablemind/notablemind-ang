@@ -1,0 +1,23 @@
+_index.org
+* One
+* Two
+  :PROPERTIES:
+  :id: 1
+  :END:
+** Three
+** Four
+* Five
+=====
+_index.org
+* One
+* Two
+  :PROPERTIES:
+  :id: 1
+  :slug: two
+  :type: major
+  :END:
+* Five
+-----
+two/_index.org
+* Three
+* Four
