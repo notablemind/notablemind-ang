@@ -206,15 +206,20 @@ describe('promote()', function(){
         if (!fs.existsSync(dir)) {
           wrench.mkdirSyncRecursive(dir, 0777);
         }
-        fs.writeFileSync(fname, lines.slice(1).join('\n'));
+        fs.writeFileSync(fname, lines.slice(1).join('\n'), {encoding:'utf8'});
       });
         
-      var bot_files = {};
+      var files = {};
       split[1].split('\n-----\n').forEach(function(part){
         var lines = part.split('\n');
-        bot_files[lines[0]] = org.starify(lines.slice(1), lines[0], true).children;
+        if (lines[0].slice(-3) === 'org') {
+          data = org.starify(lines.slice(1), lines[0], true).children;
+        } else {
+          data = lines.slice(1).join('\n');
+        }
+        files[lines[0]] = data;
       });
-      return bot_files;
+      return files;
     };
 
     var place = path.join(__dirname, 'org', 'promote');
@@ -227,7 +232,10 @@ describe('promote()', function(){
         var files = setup(fname, input, tmp);
         org.promote(tmp, 1);
         Object.keys(files).forEach(function(fname){
-          expect(org.read(path.join(tmp, fname)).children).to.eql(files[fname]);
+          if (fname.slice(-3) === 'org')
+            expect(org.read(path.join(tmp, fname)).children).to.eql(files[fname]);
+          else
+            expect(fs.readFileSync(path.join(tmp, fname), {encoding: 'utf8'})).to.eql(files[fname]);
         });
       });
     });

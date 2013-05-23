@@ -5,8 +5,16 @@ index.org
   :id: 1
   :END:
 ** Three
+  :PROPERTIES:
+  :type: file
+  :name: one.txt
+  :END:
 ** Four
 * Five
+-----
+one.txt
+Happiness
+
 =====
 index.org
 * One
@@ -20,4 +28,11 @@ index.org
 -----
 two/index.org
 * Three
+  :PROPERTIES:
+  :type: file
+  :name: one.txt
+  :END:
 * Four
+-----
+two/one.txt
+Happiness

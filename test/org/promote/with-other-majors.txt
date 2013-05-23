@@ -1,0 +1,57 @@
+index.org
+* One
+  :PROPERTIES:
+  :id: 2
+  :type: major
+  :slug: one
+  :END:
+* Two
+  :PROPERTIES:
+  :id: 1
+  :END:
+** Three
+** Four
+* Five
+  :PROPERTIES:
+  :id: 3
+  :type: major
+  :slug: five
+  :END:
+* Six
+-----
+one/index.org
+* Seven
+-----
+five/index.org
+* Eight
+=====
+index.org
+* One
+  :PROPERTIES:
+  :id: 2
+  :type: major
+  :slug: one
+  :END:
+* Two
+  :PROPERTIES:
+  :id: 1
+  :slug: two
+  :type: major
+  :END:
+* Five
+  :PROPERTIES:
+  :id: 3
+  :type: major
+  :slug: five
+  :END:
+* Six
+-----
+two/index.org
+* Three
+* Four
+-----
+one/index.org
+* Seven
+-----
+five/index.org
+* Eight

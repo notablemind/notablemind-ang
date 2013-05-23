@@ -5,8 +5,16 @@ index.org
   :id: 1
   :END:
 ** Three
+  :PROPERTIES:
+  :id: 2
+  :type: major
+  :slug: three
+  :END:
 ** Four
 * Five
+-----
+three/index.org
+* Six
 =====
 index.org
 * One
@@ -20,4 +28,12 @@ index.org
 -----
 two/index.org
 * Three
+  :PROPERTIES:
+  :id: 2
+  :type: major
+  :slug: three
+  :END:
 * Four
+-----
+two/three/index.org
+* Six

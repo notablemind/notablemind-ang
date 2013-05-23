@@ -1,0 +1,39 @@
+index.org
+* Two
+  :PROPERTIES:
+  :id: 2
+  :slug: two
+  :type: major
+  :END:
+* Two
+  :PROPERTIES:
+  :id: 1
+  :END:
+** Three
+** Four
+* Five
+-----
+two/index.org
+* Six
+=====
+index.org
+* Two
+  :PROPERTIES:
+  :id: 2
+  :slug: two
+  :type: major
+  :END:
+* Two
+  :PROPERTIES:
+  :id: 1
+  :slug: two-1
+  :type: major
+  :END:
+* Five
+-----
+two/index.org
+* Six
+-----
+two-1/index.org
+* Three
+* Four
