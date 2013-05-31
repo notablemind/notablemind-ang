@@ -1,5 +1,8 @@
 REPORTER = spec
 
+server:
+	supervisor app.js
+
 watch-test:
 	supervisor -n exit -w lib,test -e txt,js -x make -- test -B -s
 

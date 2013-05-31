@@ -8,9 +8,10 @@ var express = require('express')
   , server = require('http').createServer(app)
   , io = require('socket.io').listen(server)
   , routes = require('./routes')
-  , user = require('./routes/user')
   , http = require('http')
-  , path = require('path');
+  , path = require('path')
+
+  , org = require('org-lite');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
