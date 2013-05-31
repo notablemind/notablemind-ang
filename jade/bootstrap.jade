@@ -1,0 +1,31 @@
+extends base
+
+- menu = [['/', 'Home'], ['/about', 'About'], ['/contact', 'Contact']]
+
+append css
+  link(href="/vendor/bootstrap/css/bootstrap.min.css"
+       rel="stylesheet"
+       media="screen")
+
+block body
+  div.navbar.navbar-inverse.navbar-fixed-top
+    .navbar-inner
+      .container
+        a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.brand(href='#')
+          block projectname
+            span NotableMind
+        .nav-collapse.collapse
+          ul.nav
+            block navitems
+              each item in menu
+                li: a(href=item[0])= item[1]
+  .container
+    block container
+      h1
+        block bodytitle
+          span This is the Title ? maybe? 
+      block inner

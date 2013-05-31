@@ -1,0 +1,23 @@
+
+#page-login.page.span4.offset4
+  .title Login
+  .body
+    .error.alert.alert-error
+    .form
+      form(action="{% url 'ajax-profile-login' %}")
+        div
+          input.email(type='text', placeholder='Email', autofocus='autofocus')
+        div
+          input.password(type='password', placeholder='Password')
+        button(name="submit") Login
+    .no-account
+      span No account yet?
+      a(href="#signup").signup-button.btn Sign Up!
+
+script(type='text/template')
+  #tpl-one
+    things
+      .man {{ who }}
+    p ate
+    input(value="{{ things }}")
+

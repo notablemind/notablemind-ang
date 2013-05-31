@@ -1,0 +1,18 @@
+
+#page-signup.page.span4.offset4
+  .title Sign Up
+  .body
+    .form
+      form(action="{% url 'ajax-profile-register' %}")
+        .error.alert.alert-error
+        div
+          input.real-name(type='text', placeholder='Real Name')
+        div
+          input.email(type='text', placeholder='Email Address')
+        div
+          input.password(type='password', placeholder='Password')
+        div
+          input.repassword(type='password', placeholder='Re-enter Password')
+        button(name="submit") Register
+      a(href="#login").login-button.btn.pull-right Login
+

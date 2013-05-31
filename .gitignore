@@ -7,6 +7,9 @@ lib-cov
 *.pid
 *.gz
 #*#
+*\#
+*.swp
+*.swo
 
 pids
 logs
@@ -15,4 +18,5 @@ results
 npm-debug.log
 
 node_modules
+local_modules
 *~

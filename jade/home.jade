@@ -1,0 +1,56 @@
+extends bootstrap
+
+block headtitle
+  title Home | A Notable Mind
+
+block css
+  link(href="/static/css/home.css", rel="stylesheet", media="screen")
+  link(href="/static/css/thought.css", rel="stylesheet", media="screen")
+  link(href="/static/css/page.css", rel="stylesheet", media="screen")
+
+block bodytitle
+  span Take You Some Notes!
+
+block container
+    #pages.row-fluid
+      include pages/login
+      include pages/sign-up
+      include pages/page-view
+      include pages/sync
+      include pages/main
+
+block endjs
+  div {% csrf_token %}
+  script.
+    var TEMPLATES = [
+        '/static/tpl/',
+        'note',
+        'thought',
+        'note-text',
+        'note-rich',
+        'text',
+        'input-editable',
+        'iconinput',
+        'discussion',
+        'timeviewer',
+        'dateviewer'
+    ];
+    var URLS = {
+      'ajax-profile-login': "{% url 'ajax-profile-login' %}",
+      'ajax-profile-register': "{% url 'ajax-profile-register' %}"
+    };
+  script(src="/static/libs/jslibs/expanding.js")
+  script(src="/static/libs/jslibs/Objectid.js")
+  // script(src="/static/libs/jslibs/backbone.localStorage.js")
+  script(src="/static/js/utils.js")
+  script(src="/static/js/template_loader.js")
+  script(src="/static/js/template_view.js")
+  script(src="/static/js/auto-models.js")
+  script(src="/static/js/models.js")
+  script(src="/static/js/widgets.js")
+  script(src="/static/js/views.js")
+  script(src="/static/js/app.js")
+  script(src="/static/js/notablemind.js")
+  script(src="/static/js/pages.js")
+  script(src="/static/js/home.js")
+
