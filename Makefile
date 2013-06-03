@@ -4,10 +4,10 @@ server:
 	supervisor app.js
 
 watch-jade:
-	jade -w -P jade -o static/
+	jade -w -P assets/jade -o static/
 
 watch-styl:
-	stylus --watch styl -o static/css/
+	stylus --watch assets/styl -o static/css/
 
 watch-test:
 	supervisor -n exit -w lib,test -e txt,js -x make -- test -B -s

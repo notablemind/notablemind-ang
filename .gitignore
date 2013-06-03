@@ -22,3 +22,5 @@ local_modules
 *~
 
 conf/root.conf
+static/*.html
+static/css

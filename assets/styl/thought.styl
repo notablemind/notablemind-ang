@@ -1,0 +1,296 @@
+
+.icon-normal {
+    background-image: url('/static/imgs/box2.png');
+    background-position: center center;
+}
+
+.icon-cloud {
+    background-image: url('/static/imgs/cloud.png');
+    background-position: center center;
+}
+
+.icon-question {
+    background-image: url('/static/imgs/question.png');
+    background-position: center center;
+}
+
+.icon-todo {
+    background-image: url('/static/imgs/todo.png');
+    background-position: center center;
+}
+
+.icon-discussion {
+    background-image: url('/static/imgs/box1.png');
+    background-position: center center;
+}
+
+.tpl-timeviewer, .tpl-dateviewer {
+  input {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background-color: none;
+    height: auto;
+  }
+}
+
+.tpl-timeviewer {
+  > span {
+    display: none;
+  }
+
+  &:focus > span {
+    display: inline;
+  }
+
+  input {
+    width: 20px;
+  }
+}
+
+.tpl-dateviewer {
+  > span {
+    display: none;
+  }
+
+  &:focus > span {
+    display: inline;
+  }
+
+  input.day {
+    width: 20px;
+  }
+  select.month {
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+  input.year {
+    width: 40px;
+  }
+}
+
+.mover {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: blue;
+  border-radius: 5px;
+  display:none;
+}
+
+.tpl-note-rich {
+  position:relative;
+
+  &.moverhover {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+  .text-chunk {
+    min-height: 1.5em;
+  }
+  a.icon {
+    float: left;
+    font-size: 2em;
+    color: #aaa;
+    padding: 0 8px 0 2px;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+
+  .divarea {
+    margin-left: 20px;
+    min-height: 1.5em;
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+  &:hover .mover {
+    display: block;
+  }
+}
+
+
+.simpleviewer.collapsed {
+  .text-container {
+    display: none!important;
+  }
+}
+
+.simpleviewer {
+  &.hiding {
+    display: none;
+  }
+
+  position: relative;
+
+  > i {
+    float: left;
+  }
+
+  .text-container {
+    position: relative;
+    margin-left: 20px; // leave space for the icon
+
+    .mirror {
+      visibility: hidden;
+      padding: 5px;
+      min-width: 20px;
+    }
+
+    .mirror, input {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+
+    input {
+      position: absolute;
+      padding: 0px;
+      width: 100%;
+      // height: 100%;
+      resize: none;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+    }
+    input:focus {
+      outline: none;
+    }
+  }
+}
+
+
+.iconinput {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  width: 20px;
+  min-width: 20px;
+  margin: 0;
+}
+
+.thought {
+
+  .head {
+    position: relative;
+
+    > .icon {
+      float: left;
+    }
+
+    > .rest {
+      margin-left: 15px;
+
+      > .title {
+        width: 60%;
+        display: block;
+        padding: 0 5px;
+        margin: 5px 0;
+        min-height: 1.5em;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      .title:focus {
+        outline:none;
+      }
+
+      > .meta {
+        // width: 40%;
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        float:right;
+        margin-right: 20px;
+
+        > div {
+          display: inline-block;
+        }
+      }
+    }
+
+    &:hover .mover {
+      display: block;
+    }
+  }
+
+  .body {
+    padding-left: 20px;
+    
+    .text-chunk {
+
+      > .icon {
+        float: left;
+      }
+
+      > div.rest {
+        margin-left: 17px;
+
+        > div.child.contents {
+          margin: 5px 0;
+          padding: 0px 5;
+        }
+
+        > textarea {
+          resize: none;
+          width: 100%;
+          border: none;
+          border-radius: 0;
+          height: 1.5em;
+          padding: 0 5px;
+          margin: 5px 0;
+          display: block;
+          background-color: white;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          box-shadow: none;
+          transition: none;
+        }
+
+        > .tags {
+          float: right;
+        }
+      }
+    }
+
+  }
+}
+
+div.tpl-discussion {
+  border-radius: 10px 10px 0 0;
+  border: 1px solid #CCC;
+  padding: 5px;
+  box-shadow: 0px 0px 20px 0px #DDD;
+  padding: 30px;
+
+  > .head {
+    position: relative;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+
+    > .meta {
+      position: absolute;
+      right: 0;
+      top: 0;
+      
+      div {
+        display: inline-block;
+      }
+
+      div.text-container {
+        margin-left: 0;
+      }
+    }
+  }
+}
