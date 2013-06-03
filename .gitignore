@@ -20,3 +20,5 @@ npm-debug.log
 node_modules
 local_modules
 *~
+
+conf/root.conf

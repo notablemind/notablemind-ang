@@ -1,6 +1,5 @@
 extends base
 
-- menu = [['/', 'Home'], ['/about', 'About'], ['/contact', 'Contact']]
 
 append css
   link(href="/vendor/bootstrap/css/bootstrap.min.css"
@@ -21,6 +20,7 @@ block body
         .nav-collapse.collapse
           ul.nav
             block navitems
+              menu = [['/', 'Home'], ['/about', 'About'], ['/contact', 'Contact']]
               each item in menu
                 li: a(href=item[0])= item[1]
   .container
