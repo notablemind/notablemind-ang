@@ -1,0 +1,48 @@
+* data format
+** example item with title and tags :tag1:tag2/thing:
+*** :PROPERTIES:'
+*** :collapsed: true
+*** :type: note | todo | question | quote | qquote | file | major
+*** :created: date
+*** :modified: date
+*** -- major items only --
+*** // body will be found in [slug]/_index.org
+*** :slug: example-item
+*** // first item == grid size
+*** // (x y [width] [height]) - is auto
+*** :whiteboard: 10 (100 200) (0 50) (10 20 - 100) (350 400 200 -)
+*** :end:'
+** the JSON
+*** items will be unaware of their order.
+*** title:
+*** oid:
+*** major_parents: [slugg1, slugg2, ...]
+*** parent:
+*** children: [child1, child2]
+*** type:
+*** created:
+*** modified:
+*** // other attributes
+* endpoints
+** load-all/?major-oid : list all items
+** update/slugs/oid <- json : change an item
+*** children given as ids
+** add <- json, parent, position : add an item
+** promote/slugs/oid : promote an item to being a major item
+** demote/slugs/oid : un-majorfy
+** delete/slugs/oid : [will really just disable...]
+*** Will move it to a global deleted.org
+** attach/slugs/oid <- raw data...
+** move/slugs/oid <- new slugs, new parent, new order
+
+* If I want to get more fancy ... once I care about efficiency?
+** sync : give me everything you've got
+** update : send changes, get changes
+
+* utility functions
+** DONE parse
+** DONE write
+** DONE promote
+** TODO demote
+
+* At the start, give them some useful/informative default project.

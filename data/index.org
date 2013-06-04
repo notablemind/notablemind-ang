@@ -1,0 +1,126 @@
+
+* users
+** For the moment, I won't have anything hosted -- you run it locally. I can make it pretty easy to run locally, though. Could I package it up to run on windows? Looks like Node'll install just fine!
+*** http://dailyjs.com/2012/05/03/windows-and-node-1/
+** auth
+*** Maybe let people start outlining before they're even logged in. Give them a taste, so they can get hooked ;)
+* Major Items
+** Making something a major item will make the font size bigger, I imagine.
+** they are allowed to be used as tags.
+*** Ha! that way, not everything can be a tag. Also, non-major items don't need slugs! Right? Because they can't be referenced in any way. Pretty sure. This is *awesome*.
+** you can view them alone
+*** whiteboard
+*** columns
+* Formal Backend
+:PROPERTIES:
+:type: major
+:id: 1
+:slug: formal-backend
+:END:
+* error handling
+** Need a relatively robust way of letting the user know that they messed up the backend org files.
+* UI
+** input
+*** prevent taggage
+**** So if they input "text text text :taglike:taglike:" I don't want to swollow it. So I think I'll end all of their input (where there are no tags to be found) with '. And then I'll strip it off on read. If there are tags defined, then the "taglikes" at the end of their stuff won't be confusing.
+*** prevent HTMLage
+**** If they put in "<" or ">", then they just forfeighted org back-conversion. boo hoo. Otherwise (as long as there's nothing else funny going on), I'll convert back to org-modish. Then you'll have *bold* and /italics/ and such. 
+*** newlines
+**** For now, I won't allow them. Just make another item. Yup. So, the org-mode output items will be full of ghastly long lines. deal with it. Tags will be only alphanum and - for spaces. and / for nesting. then : to sep. So my title line can look like:
+
+**** *** text text text :tag:tag:tag:
+**** :properties:
+**** :thing1:
+**** :thing2:
+**** :end:
+**** ?? do I let them write long expansive things here? Not atm. If I feel like I need it, then maybe.
+**** Actually, perhaps items without any special stuff ... can just be hmmm nope. Because intermixing wouldn't work. OK no body atm.
+*** symbols to start an item
+**** for the moment I won't actively disallow, some will just be magic. 
+**** TODO maybe disallow symbols to start?
+** view
+*** whiteboard
+*** columns
+**** This creates as many columns as you have sub-items ... is that what I want? Maybe I'll actually probably max out at 6 or something, and then have them float:left. so you get them stacked kindof. Maybe not my favorite, but good enough for now.
+*** journal
+**** only changes items without children
+***** no bullets
+***** indented first line
+** Interaction
+*** click on a tag
+**** filter within this major item
+**** jump to this tag's page. maybe with the "offsite link" icon thing?
+** customization
+*** per-item
+**** let you define the "default item" for a given major item.
+***** item type
+****** This is useful like in a meeting. Default = quote
+***** WONTFIX contents (with special %date, etc) ? /maybe not.../
+*** keyboard shortcuts
+**** C-? tie to actions...like
+***** make this a [some type]
+***** add a tag/person
+*** prefixes for different types.
+**** These would be activated by typing the character
+**** ! todo
+**** ' quote
+**** " quote introduced by someone else (double attribution) =) love that it's a double quote
+**** $ scripture. possibly a book, too
+*** theme
+**** have a number to choose from
+***** solarized
+***** sublime =)
+***** workflowy
+***** make it easy to define new ones.
+****** It should just be a [stylus] file with constants. And then my build tool would make a theme-xx.css with all of the relevant things inside a body.theme-xx selector.
+****** Or they could do more exciting things. 
+****** my tpl would be:
+****** body.theme-[name] { @import "themes/theme-name" }
+****** any everything would work right.
+
+** backfill mode
+*** make all the dates be x
+**** because I'm typing in notes I took at some prior time. don't real-timestamp
+** the ability to designate something as a "recurring meeting"
+*** This means that when you add a sub item, the default title is just today's date.
+**** ? Should I have that just be the global default?
+**** ? or should I allow you to do more general things, like "specify the jdefault for items here"
+*** Display
+**** ability to do ordered list
+**** show no bullets (journal mode)
+* Backend Brainstorm
+:PROPERTIES:
+:type: major
+:id: 2
+:slug: backend-brainstorm
+:END:
+* Tags
+** WONTFIX Local Tags
+*** You can declare a tag to be local by starting with '-'. Or maybe not. no, make this pretty low priority. Still need to think about that.
+*** Initial idea was to construct a matching hiierarchy in the tags folder, using the slugs of all the parent items of where you are right now ... but that feels too messy.
+*** Ok, so here's a better idea
+**** Have the ability to mark an item as a "major" item, which means it can own its own tags. Local tags for this item that are created will be dropped into a special #tags item at the start of the list. ? And then "-tagname" will look up the tree for the first "major" item, and then "--tagname" will look up for the second one 
+*** Except I don't think we even need that.
+**** b/c when you're viewing a tag, you can totally view items in hierarchical order ... right?
+** Tag View
+*** regardless, you will be able to expand an item with children.
+*** flat: just give me all items with that tag
+**** In this mode, you'll still be able to mouseover an item and see it's lineage in a popover or something. And you'll be able to select it, I imagine. Select in a split pane? I totally need split panes.
+*** nested: give me all items with that tag and their parents in a tree view
+**** This way you can look at items in some context
+*** nested-major
+**** So again with the idea of a "major" item. A header, if you will. Then you see everything flattened only to within the hierarchy of major items. I feel like that would be cool.
+* Scriptures
+** Because I like them. I like them a lot. So "`ref`s" will be linked to lds.org. Mouseover will popover the text. "`ref`<s" is expanded to the scipture. And it will be contained in something like a "<span class='srcipture'>" tag.
+* Links
+** custom "directives"? alles in markdown, I think is best. or maybe rst. Looks like markdown doesn't support custom directives
+*** ex: add "scripture" directive, which ... mmm maybe that would be too complex for a non-programmer. b/c it needs to know about all the types of books, parse the thing, and then gen the link on the fly.
+** People
+*** People are also major, but they're only allowed in /people toplevel major, and when they're used as tags...we know they're people. For all org-mode knows, though, they're just tags. :people/jared-forsyth:
+*** For display, we change things up.
+*** keep track of people.
+**** they're like tags, but handled separately. They do all get their own auto-linked entry in people/. You can move this around, though (but not outside of people) But you can make categories of people. and these categories are legal "people" too. So you really have sub-people. But we'll just smile and nod.
+*** Info about a person
+**** If it doesn't belong in a meeting or elsewhere in notes, then you can just add it as a note to the person. But otherwise, just @person them (or similar).
+**** [#C] !! Be able to define "primary" and "secondary" tags & people.
+**** As in, this note is mainly about this person, but it @mentions this other person...

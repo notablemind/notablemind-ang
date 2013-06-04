@@ -1,0 +1,126 @@
+* types
+** org-mode
+** db? (sometime in the future... not first priority)
+* export
+** use #+INCLUDE: "file-name.org" src for each major item.
+** org-mode =)
+** pdf?
+** html?
+** latex?
+** beamer?
+** or maybe just refer you to emacs =)
+* file organization
+** I think that each major-item will get it's own folder. The name can be the slug.
+* file attachment
+** ? do I want attachment organization to be recognizable via the directory structure? 
+** Yes
+*** I think I'll give each major item a directory. so....
+*** /major-one/_index.org
+*** /major-one/file1.png
+*** /major-one/sub-major-1.org
+*** /major-2/_index.org
+*** /major-2/file.doc
+*** /major-2/frown.jpeg
+*** /major-3/other.org
+*** Also: auto-list
+**** If there are any files not explicitly "attached", list them at the end
+* version control!!!
+** So what's the deal here? It would be super awesome if you could VC your org-mode files, and they would do something reasonable. Do I want to be able to auto-merge reasonably?
+** Things in the way of auto-merge
+*** renaming a tag/item, or rearranging them
+**** Merge conflicts would be big old gnarly bears. Of course, I could give it the old college try. But I don't know just how successful I would be.
+**** check for edit difference
+**** check for same/similar children
+**** check for items that are missing in the current tree.
+* Note Types:
+** Major notes ... is a type. So no weird mixings. =) awesome.
+** General Org Syntax I support:
+*** In the title
+**** TODO | DONE
+**** :T:A:GS:'
+**** ? PRIORITY [#A] etc.
+*** In the properties
+**** :ID: UID
+**** :CATEGORY: category
+**** ? :ORDERED:'
+*** In the body
+**** CLOCK: [timestamp] => HH:MM
+**** CLOCK: [timestamp]--[timestamp] => HH:MM
+**** DEADLINE: <timestamp>
+**** SCHEDULED: <timestamp>
+**** CLOSED: <timestamp>
+
+**** Time stamps:
+**** DATE = YYYY-MM-DD DAYNAME
+
+**** REPEATER follows the patter:
+***** MARK VALUE UNIT
+***** MARK is + (cumulate type), ++ (catch-up type) or .+ (restart type).
+***** VALUE is a number.
+***** UNIT is a character among h (hour), d (day), w (week), m (month), y (year).
+***** MARK, VALUE and UNIT are not separated by whitespace characters.
+**** <DATE TIME REPEATER>                         (active)
+**** [DATE TIME REPEATER]                         (inactive)
+**** <DATE TIME REPEATER>--<DATE TIME REPEATER>   (active range)
+**** <DATE TIME-TIME REPEATER>                    (active range)
+**** [DATE TIME REPEATER]--[DATE TIME REPEATER]   (inactive range)
+**** [DATE TIME-TIME REPEATER]                    (inactive range)
+
+** Major note
+*** :type: major
+*** :slug: example-item
+*** :whiteboard: 10 (100 200) (0 50) (10 20 - 100) (350 400 200 -)
+**** // first item == grid size
+**** // (x y [width] [height]) - is auto
+** just a file
+*** I think I should special-case this. Because generally things will be able to have files attached to them .. right? or should I stick to my guns, and only allow files by themselves. Yeah. Can they have children?
+*** :type: file
+*** :name: file-name.ext
+*** :preview-inline: bool
+*** If it's previewable, and preview-inline is true, just stick it in there.
+** question [icon]
+*** :type: question
+** someone else's question
+*** :type: question
+*** :asker: @person
+** todo
+*** :type: todo
+*** :deadline: <date>
+*** :completed: <date>
+*** should I just manage the status via tags? hmmm
+*** :status: ?? 
+** decide (a decision needs to be made). meybe call this choose instead.
+*** Acts like a radio button group
+*** :type: decide
+*** :picked: #
+** reference/citation
+*** Have the ability to mark a major note as a "book review" or something along those lines. Notes about a book. So the default item is a reference with the said book filled in.
+*** :type: reference
+*** :work: name of work...?
+*** :page: page number
+** file attachment! =) just file name.
+*** if it's marked "preview", then show the preview inline. Otherwise popover?
+*** Previewable File Types
+**** html
+***** first 10 lines
+**** txt
+***** first 10 lines
+**** png
+**** jpeg
+**** gif
+*** Maybe
+**** doc
+**** pdf
+**** odt
+* Format constraints
+** I think I'll restrict them to starting their item with either a letter or a number. Because then, I can do special things, like making it a todo when they start with ! *So I decided not to enforce this* for the time being
+* slugs
+** every item has a "slug". That way tags are more intuitive.
+** ? should this be globally unique? probably not.
+** ? what when two items with the same slug are put in the same list? (if it wasn't done through the gui) we complain, and let the user figure it out.
+** created by lower(remove(all non alphanum except -)) -join first 3 words
+** Doesn't need to be static. I just have to check all connections when you do change something.
+* Format for things
+** Should it be markdown? restructuredtext? Some fancy things (like my scripture awesomeness) can't really be captured by rst or md. It would need to be html. Hmmm... but typing on the backend would be much more awesome in rst or md. or org.
+** Well, since I don't let people start with wierd characters
+*** I could always check. And if the text starts with <div>, then it's html. Otherwise, it's org. (mk maybe rst. jury's still out).

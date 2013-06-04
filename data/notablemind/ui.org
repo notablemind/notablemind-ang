@@ -1,0 +1,52 @@
+
+* [#B] pages
+** main page
+*** header
+**** top nav
+***** Blog
+***** About
+***** Help
+**** username/gravatar
+***** logout
+**** [#C] notifications?
+**** Feedback
+**** Github!
+*** sidebar
+**** [#C] overview
+ [maybe] like code at 1000 feet. Not sure if I want this
+**** item tree
+pretty basic. List all major items, plus a people/ folder and a tags/
+folder, which are only derived until you go in and make one of them
+real (by adding content specifically to one of the tags/people).
+*** content
+**** major item view
+URLs here look like mode/[objectid]/name of item
+Where mode is one of:
+***** list view
+? maybe allow to filter by item type? I think this fits better with
+tag view... hmm...
+***** columns
+Each primary item gets a column, to a maximum of 6 columns. All
+float:left.
+***** whiteboard
+Primary items are boxes, which can be resized, and dragged around. No
+real restrictions here -- should still be editable!! = awesome
+***** agenda
+Here it lists all TODOs and GOALs and HABITs
+***** reporting
+Like agenda, but with graphs...and stuff
+**** tag view
+***** flat list
+***** major-nested
+***** nested list [maybe not even do this?]
+*** footer
+**** copyright
+**** github
+** settings
+*** UI
+**** theme
+**** keyboard shortcuts
+*** backend
+**** cleanup items that have been deleted for more than 30 days
+*** ???
+*** export ?
