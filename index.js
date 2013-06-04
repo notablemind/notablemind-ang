@@ -26,7 +26,7 @@ var app = angular.module('notablemind', ['ngResource', 'note'])
   });
 
 app.controller('NoteList', function NoteList($scope, $routeParams, db) {
-  $scope.notes = db;
+  $scope.note = {"children": db};
   window.db=db;
   console.log(db.length);
 });
