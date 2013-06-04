@@ -1,5 +1,11 @@
 REPORTER = spec
 
+build: components
+	@component build
+
+components: component.json
+	@component install
+
 server:
 	supervisor app.js
 
