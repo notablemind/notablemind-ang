@@ -6,7 +6,7 @@ loader('note', require('note'));
 
 var angular = require('angularjs');
 
-var app = angular.module('notablemind', ['notes'])
+var app = angular.module('notablemind', ['ngResource', 'note'])
   .config(['$routeProvider', '$locationProvider', function($rp, $lp) {
     $rp.when('/', {
       templateUrl: 'noteList.html',
@@ -17,12 +17,23 @@ var app = angular.module('notablemind', ['notes'])
     }).when('/settings', {
       templateUrl: 'settings.html',
       controller: 'Settings'
-    });
+    }).otherwise({redirectTo: '/'});
     $lp.html5Mode(true);
-  }]);
+  }]).run(function($location) {
+    if (window.client_route)
+      $location.path('/' + window.client_route);
+  });
 
-app.controller('NoteList', function NoteList($scope, $http) {
-  $scope.notes = [];
+app.controller('NoteList', function NoteList($scope, $routeParams, db) {
+  $scope.notes = db;
+  window.db=db;
+  console.log(db.length);
 });
+
+app.factory('db', ['$resource', function($resource) {
+  return $resource('/json', {}, {
+    'getAll': {method: 'GET', isArray: true}
+  }).getAll();
+}]);
 
 

@@ -6,6 +6,7 @@
   "keywords": [],
   "dependencies": {
     "notablemind/angular-loader": "*",
+    "notablemind/angular-resource": "*",
     "jabapyth/angularjs": "*",
     "notablemind/note": "*"
   },

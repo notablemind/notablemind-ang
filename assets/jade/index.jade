@@ -12,14 +12,14 @@ block bodytitle
   span Take You Some Notes!
 
 block container
-    #pages.row-fluid
-      include pages/login
-      include pages/sign-up
-      include pages/page-view
-      include pages/sync
-      include pages/main
+    #pages.row-fluid(ng-view)
+    .templates
+      script(id='noteList.html', type='text/ng-template')
+        .note(ng-repeat="note in notes", data-note="note")
+      script(id="settings.html", type="text/ng-template").
+        Nothing to see here.
 
-block endjs
+append endjs
   script.
     var TEMPLATES = [
         '/static/tpl/',
@@ -39,4 +39,6 @@ block endjs
       'ajax-profile-register': "{% url 'ajax-profile-register' %}"
     };
   script(src="/js/build.js")
+  script.
+    var nm = require('notablemind');
 
