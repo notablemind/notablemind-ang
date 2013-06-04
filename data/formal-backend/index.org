@@ -1,48 +1,265 @@
-* data format
+* data format'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000001
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
 ** example item with title and tags :tag1:tag2/thing:
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000002
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
 *** :PROPERTIES:'
-*** :collapsed: true
-*** :type: note | todo | question | quote | qquote | file | major
-*** :created: date
-*** :modified: date
-*** -- major items only --
-*** // body will be found in [slug]/_index.org
-*** :slug: example-item
-*** // first item == grid size
-*** // (x y [width] [height]) - is auto
-*** :whiteboard: 10 (100 200) (0 50) (10 20 - 100) (350 400 200 -)
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000003
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :collapsed: true'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000004
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :type: note | todo | question | quote | qquote | file | major'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000005
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :created: date'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000006
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :modified: date'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000007
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** -- major items only --'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000008
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** // body will be found in [slug]/_index.org'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000009
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :slug: example-item'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000000a
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** // first item == grid size'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000000b
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** // (x y [width] [height]) - is auto'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000000c
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :whiteboard: 10 (100 200) (0 50) (10 20 - 100) (350 400 200 -)'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000000d
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
 *** :end:'
-** the JSON
-*** items will be unaware of their order.
-*** title:
-*** oid:
-*** major_parents: [slugg1, slugg2, ...]
-*** parent:
-*** children: [child1, child2]
-*** type:
-*** created:
-*** modified:
-*** // other attributes
-* endpoints
-** load-all/?major-oid : list all items
-** update/slugs/oid <- json : change an item
-*** children given as ids
-** add <- json, parent, position : add an item
-** promote/slugs/oid : promote an item to being a major item
-** demote/slugs/oid : un-majorfy
-** delete/slugs/oid : [will really just disable...]
-*** Will move it to a global deleted.org
-** attach/slugs/oid <- raw data...
-** move/slugs/oid <- new slugs, new parent, new order
-
-* If I want to get more fancy ... once I care about efficiency?
-** sync : give me everything you've got
-** update : send changes, get changes
-
-* utility functions
-** DONE parse
-** DONE write
-** DONE promote
-** TODO demote
-
-* At the start, give them some useful/informative default project.
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000000e
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** the JSON'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000000f
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** items will be unaware of their order.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000010
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** title:'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000011
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** oid:'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000012
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** major_parents: [slugg1, slugg2, ...]'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000013
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** parent:'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000014
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** children: [child1, child2]'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000015
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** type:'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000016
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** created:'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000017
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** modified:'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000018
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** // other attributes'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000019
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+* endpoints'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000001a
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** load-all/?major-oid : list all items'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000001b
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** update/slugs/oid <- json : change an item'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000001c
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** children given as ids'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000001d
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** add <- json, parent, position : add an item'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000001e
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** promote/slugs/oid : promote an item to being a major item'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000001f
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** demote/slugs/oid : un-majorfy'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000020
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** delete/slugs/oid : [will really just disable...]'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000021
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** Will move it to a global deleted.org'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000022
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** attach/slugs/oid <- raw data...'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000023
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** move/slugs/oid <- new slugs, new parent, new order'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000024
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+* If I want to get more fancy ... once I care about efficiency?'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000025
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** sync : give me everything you've got'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000026
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** update : send changes, get changes'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000027
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+* utility functions'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000028
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** DONE parse'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000029
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** DONE write'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000002a
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** DONE promote'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000002b
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** TODO demote'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000002c
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+* At the start, give them some useful/informative default project.'

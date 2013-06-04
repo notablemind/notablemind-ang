@@ -1,126 +1,677 @@
-
-* users
-** For the moment, I won't have anything hosted -- you run it locally. I can make it pretty easy to run locally, though. Could I package it up to run on windows? Looks like Node'll install just fine!
-*** http://dailyjs.com/2012/05/03/windows-and-node-1/
-** auth
-*** Maybe let people start outlining before they're even logged in. Give them a taste, so they can get hooked ;)
-* Major Items
-** Making something a major item will make the font size bigger, I imagine.
-** they are allowed to be used as tags.
-*** Ha! that way, not everything can be a tag. Also, non-major items don't need slugs! Right? Because they can't be referenced in any way. Pretty sure. This is *awesome*.
-** you can view them alone
-*** whiteboard
-*** columns
-* Formal Backend
-:PROPERTIES:
-:type: major
-:id: 1
-:slug: formal-backend
-:END:
-* error handling
-** Need a relatively robust way of letting the user know that they messed up the backend org files.
-* UI
-** input
-*** prevent taggage
-**** So if they input "text text text :taglike:taglike:" I don't want to swollow it. So I think I'll end all of their input (where there are no tags to be found) with '. And then I'll strip it off on read. If there are tags defined, then the "taglikes" at the end of their stuff won't be confusing.
-*** prevent HTMLage
-**** If they put in "<" or ">", then they just forfeighted org back-conversion. boo hoo. Otherwise (as long as there's nothing else funny going on), I'll convert back to org-modish. Then you'll have *bold* and /italics/ and such. 
-*** newlines
-**** For now, I won't allow them. Just make another item. Yup. So, the org-mode output items will be full of ghastly long lines. deal with it. Tags will be only alphanum and - for spaces. and / for nesting. then : to sep. So my title line can look like:
-
+* users'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000001
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** For the moment, I won't have anything hosted -- you run it locally. I can make it pretty easy to run locally, though. Could I package it up to run on windows? Looks like Node'll install just fine!'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000002
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** http://dailyjs.com/2012/05/03/windows-and-node-1/'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000003
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** auth'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000004
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** Maybe let people start outlining before they're even logged in. Give them a taste, so they can get hooked ;)'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000005
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+* Major Items'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000006
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** Making something a major item will make the font size bigger, I imagine.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000007
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** they are allowed to be used as tags.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000008
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** Ha! that way, not everything can be a tag. Also, non-major items don't need slugs! Right? Because they can't be referenced in any way. Pretty sure. This is *awesome*.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000009
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** you can view them alone'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100000a
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** whiteboard'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100000b
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** columns'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100000c
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+* Formal Backend'
+  :PROPERTIES:
+  :type: major
+  :id: 1
+  :slug: formal-backend
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+* error handling'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100000d
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** Need a relatively robust way of letting the user know that they messed up the backend org files.'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100000e
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+* UI'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100000f
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** input'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000010
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** prevent taggage'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000011
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** So if they input "text text text :taglike:taglike:" I don't want to swollow it. So I think I'll end all of their input (where there are no tags to be found) with '. And then I'll strip it off on read. If there are tags defined, then the "taglikes" at the end of their stuff won't be confusing.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000012
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** prevent HTMLage'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000013
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** If they put in "<" or ">", then they just forfeighted org back-conversion. boo hoo. Otherwise (as long as there's nothing else funny going on), I'll convert back to org-modish. Then you'll have *bold* and /italics/ and such. '
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000014
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** newlines'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000015
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** For now, I won't allow them. Just make another item. Yup. So, the org-mode output items will be full of ghastly long lines. deal with it. Tags will be only alphanum and - for spaces. and / for nesting. then : to sep. So my title line can look like:'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000016
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
 **** *** text text text :tag:tag:tag:
-**** :properties:
-**** :thing1:
-**** :thing2:
-**** :end:
-**** ?? do I let them write long expansive things here? Not atm. If I feel like I need it, then maybe.
-**** Actually, perhaps items without any special stuff ... can just be hmmm nope. Because intermixing wouldn't work. OK no body atm.
-*** symbols to start an item
-**** for the moment I won't actively disallow, some will just be magic. 
-**** TODO maybe disallow symbols to start?
-** view
-*** whiteboard
-*** columns
-**** This creates as many columns as you have sub-items ... is that what I want? Maybe I'll actually probably max out at 6 or something, and then have them float:left. so you get them stacked kindof. Maybe not my favorite, but good enough for now.
-*** journal
-**** only changes items without children
-***** no bullets
-***** indented first line
-** Interaction
-*** click on a tag
-**** filter within this major item
-**** jump to this tag's page. maybe with the "offsite link" icon thing?
-** customization
-*** per-item
-**** let you define the "default item" for a given major item.
-***** item type
-****** This is useful like in a meeting. Default = quote
-***** WONTFIX contents (with special %date, etc) ? /maybe not.../
-*** keyboard shortcuts
-**** C-? tie to actions...like
-***** make this a [some type]
-***** add a tag/person
-*** prefixes for different types.
-**** These would be activated by typing the character
-**** ! todo
-**** ' quote
-**** " quote introduced by someone else (double attribution) =) love that it's a double quote
-**** $ scripture. possibly a book, too
-*** theme
-**** have a number to choose from
-***** solarized
-***** sublime =)
-***** workflowy
-***** make it easy to define new ones.
-****** It should just be a [stylus] file with constants. And then my build tool would make a theme-xx.css with all of the relevant things inside a body.theme-xx selector.
-****** Or they could do more exciting things. 
-****** my tpl would be:
-****** body.theme-[name] { @import "themes/theme-name" }
-****** any everything would work right.
-
-** backfill mode
-*** make all the dates be x
-**** because I'm typing in notes I took at some prior time. don't real-timestamp
-** the ability to designate something as a "recurring meeting"
-*** This means that when you add a sub item, the default title is just today's date.
-**** ? Should I have that just be the global default?
-**** ? or should I allow you to do more general things, like "specify the jdefault for items here"
-*** Display
-**** ability to do ordered list
-**** show no bullets (journal mode)
-* Backend Brainstorm
-:PROPERTIES:
-:type: major
-:id: 2
-:slug: backend-brainstorm
-:END:
-* Tags
-** WONTFIX Local Tags
-*** You can declare a tag to be local by starting with '-'. Or maybe not. no, make this pretty low priority. Still need to think about that.
-*** Initial idea was to construct a matching hiierarchy in the tags folder, using the slugs of all the parent items of where you are right now ... but that feels too messy.
-*** Ok, so here's a better idea
-**** Have the ability to mark an item as a "major" item, which means it can own its own tags. Local tags for this item that are created will be dropped into a special #tags item at the start of the list. ? And then "-tagname" will look up the tree for the first "major" item, and then "--tagname" will look up for the second one 
-*** Except I don't think we even need that.
-**** b/c when you're viewing a tag, you can totally view items in hierarchical order ... right?
-** Tag View
-*** regardless, you will be able to expand an item with children.
-*** flat: just give me all items with that tag
-**** In this mode, you'll still be able to mouseover an item and see it's lineage in a popover or something. And you'll be able to select it, I imagine. Select in a split pane? I totally need split panes.
-*** nested: give me all items with that tag and their parents in a tree view
-**** This way you can look at items in some context
-*** nested-major
-**** So again with the idea of a "major" item. A header, if you will. Then you see everything flattened only to within the hierarchy of major items. I feel like that would be cool.
-* Scriptures
-** Because I like them. I like them a lot. So "`ref`s" will be linked to lds.org. Mouseover will popover the text. "`ref`<s" is expanded to the scipture. And it will be contained in something like a "<span class='srcipture'>" tag.
-* Links
-** custom "directives"? alles in markdown, I think is best. or maybe rst. Looks like markdown doesn't support custom directives
-*** ex: add "scripture" directive, which ... mmm maybe that would be too complex for a non-programmer. b/c it needs to know about all the types of books, parse the thing, and then gen the link on the fly.
-** People
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000017
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** :properties:'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000018
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** :thing1:'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000019
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** :thing2:'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100001a
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** :end:'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100001b
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** ?? do I let them write long expansive things here? Not atm. If I feel like I need it, then maybe.'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100001c
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** Actually, perhaps items without any special stuff ... can just be hmmm nope. Because intermixing wouldn't work. OK no body atm.'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100001d
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** symbols to start an item'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100001e
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** for the moment I won't actively disallow, some will just be magic. '
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100001f
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** TODO maybe disallow symbols to start?'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000020
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** view'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000021
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** whiteboard'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000022
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** columns'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000023
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** This creates as many columns as you have sub-items ... is that what I want? Maybe I'll actually probably max out at 6 or something, and then have them float:left. so you get them stacked kindof. Maybe not my favorite, but good enough for now.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000024
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** journal'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000025
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** only changes items without children'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000026
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+***** no bullets'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000027
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+***** indented first line'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000028
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** Interaction'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000029
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** click on a tag'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100002a
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** filter within this major item'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100002b
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** jump to this tag's page. maybe with the "offsite link" icon thing?'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100002c
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** customization'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100002d
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** per-item'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100002e
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** let you define the "default item" for a given major item.'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100002f
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+***** item type'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000030
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+****** This is useful like in a meeting. Default = quote'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000031
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+***** WONTFIX contents (with special %date, etc) ? /maybe not.../'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000032
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** keyboard shortcuts'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000033
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** C-? tie to actions...like'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000034
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+***** make this a [some type]'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000035
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+***** add a tag/person'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000036
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** prefixes for different types.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000037
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** These would be activated by typing the character'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000038
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** ! todo'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000039
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** ' quote'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100003a
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** " quote introduced by someone else (double attribution) =) love that it's a double quote'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100003b
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** $ scripture. possibly a book, too'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100003c
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** theme'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100003d
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** have a number to choose from'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100003e
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+***** solarized'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100003f
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+***** sublime =)'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000040
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+***** workflowy'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000041
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+***** make it easy to define new ones.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000042
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+****** It should just be a [stylus] file with constants. And then my build tool would make a theme-xx.css with all of the relevant things inside a body.theme-xx selector.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000043
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+****** Or they could do more exciting things. '
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000044
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+****** my tpl would be:'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000045
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+****** body.theme-[name] { @import "themes/theme-name" }'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000046
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+****** any everything would work right.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000047
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** backfill mode'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000048
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** make all the dates be x'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000049
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** because I'm typing in notes I took at some prior time. don't real-timestamp'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100004a
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** the ability to designate something as a "recurring meeting"'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100004b
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** This means that when you add a sub item, the default title is just today's date.'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100004c
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** ? Should I have that just be the global default?'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100004d
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** ? or should I allow you to do more general things, like "specify the jdefault for items here"'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100004e
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** Display'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100004f
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** ability to do ordered list'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000050
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** show no bullets (journal mode)'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000051
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+* Backend Brainstorm'
+  :PROPERTIES:
+  :type: major
+  :id: 2
+  :slug: backend-brainstorm
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+* Tags'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000052
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** WONTFIX Local Tags'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000053
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** You can declare a tag to be local by starting with '-'. Or maybe not. no, make this pretty low priority. Still need to think about that.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000054
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** Initial idea was to construct a matching hiierarchy in the tags folder, using the slugs of all the parent items of where you are right now ... but that feels too messy.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000055
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** Ok, so here's a better idea'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000056
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** Have the ability to mark an item as a "major" item, which means it can own its own tags. Local tags for this item that are created will be dropped into a special #tags item at the start of the list. ? And then "-tagname" will look up the tree for the first "major" item, and then "--tagname" will look up for the second one '
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000057
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** Except I don't think we even need that.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000058
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** b/c when you're viewing a tag, you can totally view items in hierarchical order ... right?'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000059
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** Tag View'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100005a
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** regardless, you will be able to expand an item with children.'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100005b
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** flat: just give me all items with that tag'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100005c
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** In this mode, you'll still be able to mouseover an item and see it's lineage in a popover or something. And you'll be able to select it, I imagine. Select in a split pane? I totally need split panes.'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100005d
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** nested: give me all items with that tag and their parents in a tree view'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100005e
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** This way you can look at items in some context'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100005f
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** nested-major'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000060
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** So again with the idea of a "major" item. A header, if you will. Then you see everything flattened only to within the hierarchy of major items. I feel like that would be cool.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000061
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+* Scriptures'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000062
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** Because I like them. I like them a lot. So "`ref`s" will be linked to lds.org. Mouseover will popover the text. "`ref`<s" is expanded to the scipture. And it will be contained in something like a "<span class='srcipture'>" tag.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000063
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+* Links'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000064
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** custom "directives"? alles in markdown, I think is best. or maybe rst. Looks like markdown doesn't support custom directives'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000065
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** ex: add "scripture" directive, which ... mmm maybe that would be too complex for a non-programmer. b/c it needs to know about all the types of books, parse the thing, and then gen the link on the fly.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000066
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** People'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000067
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
 *** People are also major, but they're only allowed in /people toplevel major, and when they're used as tags...we know they're people. For all org-mode knows, though, they're just tags. :people/jared-forsyth:
-*** For display, we change things up.
-*** keep track of people.
-**** they're like tags, but handled separately. They do all get their own auto-linked entry in people/. You can move this around, though (but not outside of people) But you can make categories of people. and these categories are legal "people" too. So you really have sub-people. But we'll just smile and nod.
-*** Info about a person
-**** If it doesn't belong in a meeting or elsewhere in notes, then you can just add it as a note to the person. But otherwise, just @person them (or similar).
-**** [#C] !! Be able to define "primary" and "secondary" tags & people.
-**** As in, this note is mainly about this person, but it @mentions this other person...
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000068
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** For display, we change things up.'
+  :PROPERTIES:
+  :id: 51ad799ccf94219521000069
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** keep track of people.'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100006a
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** they're like tags, but handled separately. They do all get their own auto-linked entry in people/. You can move this around, though (but not outside of people) But you can make categories of people. and these categories are legal "people" too. So you really have sub-people. But we'll just smile and nod.'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100006b
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+*** Info about a person'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100006c
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** If it doesn't belong in a meeting or elsewhere in notes, then you can just add it as a note to the person. But otherwise, just @person them (or similar).'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100006d
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** [#C] !! Be able to define "primary" and "secondary" tags & people.'
+  :PROPERTIES:
+  :id: 51ad799ccf9421952100006e
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+**** As in, this note is mainly about this person, but it @mentions this other person...'

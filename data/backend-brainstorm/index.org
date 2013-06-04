@@ -1,126 +1,733 @@
-* types
-** org-mode
-** db? (sometime in the future... not first priority)
-* export
-** use #+INCLUDE: "file-name.org" src for each major item.
-** org-mode =)
-** pdf?
-** html?
-** latex?
-** beamer?
-** or maybe just refer you to emacs =)
-* file organization
-** I think that each major-item will get it's own folder. The name can be the slug.
-* file attachment
-** ? do I want attachment organization to be recognizable via the directory structure? 
-** Yes
-*** I think I'll give each major item a directory. so....
-*** /major-one/_index.org
-*** /major-one/file1.png
-*** /major-one/sub-major-1.org
-*** /major-2/_index.org
-*** /major-2/file.doc
-*** /major-2/frown.jpeg
-*** /major-3/other.org
-*** Also: auto-list
-**** If there are any files not explicitly "attached", list them at the end
-* version control!!!
-** So what's the deal here? It would be super awesome if you could VC your org-mode files, and they would do something reasonable. Do I want to be able to auto-merge reasonably?
-** Things in the way of auto-merge
-*** renaming a tag/item, or rearranging them
-**** Merge conflicts would be big old gnarly bears. Of course, I could give it the old college try. But I don't know just how successful I would be.
-**** check for edit difference
-**** check for same/similar children
-**** check for items that are missing in the current tree.
-* Note Types:
-** Major notes ... is a type. So no weird mixings. =) awesome.
-** General Org Syntax I support:
-*** In the title
-**** TODO | DONE
+* types'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000002d
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** org-mode'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000002e
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** db? (sometime in the future... not first priority)'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000002f
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+* export'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000030
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** use #+INCLUDE: "file-name.org" src for each major item.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000031
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** org-mode =)'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000032
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** pdf?'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000033
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** html?'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000034
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** latex?'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000035
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** beamer?'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000036
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** or maybe just refer you to emacs =)'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000037
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+* file organization'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000038
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** I think that each major-item will get it's own folder. The name can be the slug.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000039
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+* file attachment'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000003a
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** ? do I want attachment organization to be recognizable via the directory structure? '
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000003b
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** Yes'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000003c
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** I think I'll give each major item a directory. so....'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000003d
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** /major-one/_index.org'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000003e
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** /major-one/file1.png'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000003f
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** /major-one/sub-major-1.org'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000040
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** /major-2/_index.org'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000041
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** /major-2/file.doc'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000042
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** /major-2/frown.jpeg'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000043
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** /major-3/other.org'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000044
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** Also: auto-list'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000045
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** If there are any files not explicitly "attached", list them at the end'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000046
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+* version control!!!'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000047
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** So what's the deal here? It would be super awesome if you could VC your org-mode files, and they would do something reasonable. Do I want to be able to auto-merge reasonably?'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000048
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** Things in the way of auto-merge'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000049
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** renaming a tag/item, or rearranging them'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000004a
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** Merge conflicts would be big old gnarly bears. Of course, I could give it the old college try. But I don't know just how successful I would be.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000004b
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** check for edit difference'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000004c
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** check for same/similar children'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000004d
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** check for items that are missing in the current tree.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000004e
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+* Note Types:'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000004f
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** Major notes ... is a type. So no weird mixings. =) awesome.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000050
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** General Org Syntax I support:'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000051
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** In the title'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000052
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** TODO | DONE'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000053
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
 **** :T:A:GS:'
-**** ? PRIORITY [#A] etc.
-*** In the properties
-**** :ID: UID
-**** :CATEGORY: category
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000054
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** ? PRIORITY [#A] etc.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000055
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** In the properties'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000056
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** :ID: UID'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000057
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** :CATEGORY: category'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000058
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
 **** ? :ORDERED:'
-*** In the body
-**** CLOCK: [timestamp] => HH:MM
-**** CLOCK: [timestamp]--[timestamp] => HH:MM
-**** DEADLINE: <timestamp>
-**** SCHEDULED: <timestamp>
-**** CLOSED: <timestamp>
-
-**** Time stamps:
-**** DATE = YYYY-MM-DD DAYNAME
-
-**** REPEATER follows the patter:
-***** MARK VALUE UNIT
-***** MARK is + (cumulate type), ++ (catch-up type) or .+ (restart type).
-***** VALUE is a number.
-***** UNIT is a character among h (hour), d (day), w (week), m (month), y (year).
-***** MARK, VALUE and UNIT are not separated by whitespace characters.
-**** <DATE TIME REPEATER>                         (active)
-**** [DATE TIME REPEATER]                         (inactive)
-**** <DATE TIME REPEATER>--<DATE TIME REPEATER>   (active range)
-**** <DATE TIME-TIME REPEATER>                    (active range)
-**** [DATE TIME REPEATER]--[DATE TIME REPEATER]   (inactive range)
-**** [DATE TIME-TIME REPEATER]                    (inactive range)
-
-** Major note
-*** :type: major
-*** :slug: example-item
-*** :whiteboard: 10 (100 200) (0 50) (10 20 - 100) (350 400 200 -)
-**** // first item == grid size
-**** // (x y [width] [height]) - is auto
-** just a file
-*** I think I should special-case this. Because generally things will be able to have files attached to them .. right? or should I stick to my guns, and only allow files by themselves. Yeah. Can they have children?
-*** :type: file
-*** :name: file-name.ext
-*** :preview-inline: bool
-*** If it's previewable, and preview-inline is true, just stick it in there.
-** question [icon]
-*** :type: question
-** someone else's question
-*** :type: question
-*** :asker: @person
-** todo
-*** :type: todo
-*** :deadline: <date>
-*** :completed: <date>
-*** should I just manage the status via tags? hmmm
-*** :status: ?? 
-** decide (a decision needs to be made). meybe call this choose instead.
-*** Acts like a radio button group
-*** :type: decide
-*** :picked: #
-** reference/citation
-*** Have the ability to mark a major note as a "book review" or something along those lines. Notes about a book. So the default item is a reference with the said book filled in.
-*** :type: reference
-*** :work: name of work...?
-*** :page: page number
-** file attachment! =) just file name.
-*** if it's marked "preview", then show the preview inline. Otherwise popover?
-*** Previewable File Types
-**** html
-***** first 10 lines
-**** txt
-***** first 10 lines
-**** png
-**** jpeg
-**** gif
-*** Maybe
-**** doc
-**** pdf
-**** odt
-* Format constraints
-** I think I'll restrict them to starting their item with either a letter or a number. Because then, I can do special things, like making it a todo when they start with ! *So I decided not to enforce this* for the time being
-* slugs
-** every item has a "slug". That way tags are more intuitive.
-** ? should this be globally unique? probably not.
-** ? what when two items with the same slug are put in the same list? (if it wasn't done through the gui) we complain, and let the user figure it out.
-** created by lower(remove(all non alphanum except -)) -join first 3 words
-** Doesn't need to be static. I just have to check all connections when you do change something.
-* Format for things
-** Should it be markdown? restructuredtext? Some fancy things (like my scripture awesomeness) can't really be captured by rst or md. It would need to be html. Hmmm... but typing on the backend would be much more awesome in rst or md. or org.
-** Well, since I don't let people start with wierd characters
-*** I could always check. And if the text starts with <div>, then it's html. Otherwise, it's org. (mk maybe rst. jury's still out).
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000059
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** In the body'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000005a
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** CLOCK: [timestamp] => HH:MM'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000005b
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** CLOCK: [timestamp]--[timestamp] => HH:MM'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000005c
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** DEADLINE: <timestamp>'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000005d
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** SCHEDULED: <timestamp>'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000005e
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** CLOSED: <timestamp>'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000005f
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** Time stamps:'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000060
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** DATE = YYYY-MM-DD DAYNAME'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000061
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** REPEATER follows the patter:'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000062
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+***** MARK VALUE UNIT'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000063
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+***** MARK is + (cumulate type), ++ (catch-up type) or .+ (restart type).'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000064
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+***** VALUE is a number.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000065
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+***** UNIT is a character among h (hour), d (day), w (week), m (month), y (year).'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000066
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+***** MARK, VALUE and UNIT are not separated by whitespace characters.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000067
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** <DATE TIME REPEATER>                         (active)'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000068
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** [DATE TIME REPEATER]                         (inactive)'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000069
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** <DATE TIME REPEATER>--<DATE TIME REPEATER>   (active range)'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000006a
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** <DATE TIME-TIME REPEATER>                    (active range)'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000006b
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** [DATE TIME REPEATER]--[DATE TIME REPEATER]   (inactive range)'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000006c
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** [DATE TIME-TIME REPEATER]                    (inactive range)'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000006d
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** Major note'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000006e
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :type: major'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000006f
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :slug: example-item'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000070
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :whiteboard: 10 (100 200) (0 50) (10 20 - 100) (350 400 200 -)'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000071
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** // first item == grid size'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000072
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** // (x y [width] [height]) - is auto'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000073
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** just a file'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000074
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** I think I should special-case this. Because generally things will be able to have files attached to them .. right? or should I stick to my guns, and only allow files by themselves. Yeah. Can they have children?'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000075
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :type: file'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000076
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :name: file-name.ext'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000077
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :preview-inline: bool'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000078
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** If it's previewable, and preview-inline is true, just stick it in there.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000079
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** question [icon]'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000007a
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :type: question'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000007b
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** someone else's question'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000007c
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :type: question'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000007d
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :asker: @person'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000007e
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** todo'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000007f
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :type: todo'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000080
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :deadline: <date>'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000081
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :completed: <date>'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000082
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** should I just manage the status via tags? hmmm'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000083
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :status: ?? '
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000084
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** decide (a decision needs to be made). meybe call this choose instead.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000085
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** Acts like a radio button group'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000086
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :type: decide'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000087
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :picked: #'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000088
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** reference/citation'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000089
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** Have the ability to mark a major note as a "book review" or something along those lines. Notes about a book. So the default item is a reference with the said book filled in.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000008a
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :type: reference'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000008b
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :work: name of work...?'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000008c
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** :page: page number'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000008d
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** file attachment! =) just file name.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000008e
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** if it's marked "preview", then show the preview inline. Otherwise popover?'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000008f
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** Previewable File Types'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000090
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** html'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000091
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+***** first 10 lines'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000092
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** txt'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000093
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+***** first 10 lines'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000094
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** png'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000095
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** jpeg'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000096
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** gif'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000097
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** Maybe'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000098
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** doc'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000099
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** pdf'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000009a
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+**** odt'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000009b
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+* Format constraints'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000009c
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** I think I'll restrict them to starting their item with either a letter or a number. Because then, I can do special things, like making it a todo when they start with ! *So I decided not to enforce this* for the time being'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000009d
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+* slugs'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000009e
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** every item has a "slug". That way tags are more intuitive.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c583000009f
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** ? should this be globally unique? probably not.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c58300000a0
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** ? what when two items with the same slug are put in the same list? (if it wasn't done through the gui) we complain, and let the user figure it out.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c58300000a1
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** created by lower(remove(all non alphanum except -)) -join first 3 words'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c58300000a2
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** Doesn't need to be static. I just have to check all connections when you do change something.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c58300000a3
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+* Format for things'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c58300000a4
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** Should it be markdown? restructuredtext? Some fancy things (like my scripture awesomeness) can't really be captured by rst or md. It would need to be html. Hmmm... but typing on the backend would be much more awesome in rst or md. or org.'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c58300000a5
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** Well, since I don't let people start with wierd characters'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c58300000a6
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+*** I could always check. And if the text starts with <div>, then it's html. Otherwise, it's org. (mk maybe rst. jury's still out).'
