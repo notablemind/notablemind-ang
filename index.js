@@ -5,6 +5,7 @@ var loader = require('angular-loader');
 loader('note', require('note'));
 
 var angular = require('angularjs');
+require('angular-resource');
 
 var app = angular.module('notablemind', ['ngResource', 'note'])
   .config(['$routeProvider', '$locationProvider', function($rp, $lp) {

@@ -1,7 +1,7 @@
 REPORTER = spec
 
 build: components
-	@component build
+	@component build --use component-stylus
 
 components: component.json
 	@component install
