@@ -29,10 +29,10 @@ test: lib
 subrepos := $(wildcard components/*)
 
 git-up: $(subrepos)
-	@git pull
+	git pull
 
 components/%:
-	@cd $@ && git pull
+	cd $@ && git pull
 
 test-cov=coverage.html
 coverage.html: lib-cov test
