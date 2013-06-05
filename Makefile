@@ -26,6 +26,14 @@ test: lib
 		--reporter $(REPORTER)
 	@touch test
 
+subrepos := $(wildcard components/*)
+
+git-up: $(subrepos)
+	@git pull
+
+components/%:
+	@cd $@ && git pull
+
 test-cov=coverage.html
 coverage.html: lib-cov test
 	@EXPRESS_COV=1 $(MAKE) --no-print-directory test -B REPORTER=html-cov > coverage.html
