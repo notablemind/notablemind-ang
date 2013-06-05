@@ -26,13 +26,13 @@ test: lib
 		--reporter $(REPORTER)
 	@touch test
 
-subrepos := $(wildcard components/*)
+subrepos := $(wildcard components/*/.git)
 
-git-up: $(subrepos)
+git-up:
+	@for dir in $(subrepos); do \
+		echo $$dir; cd $$dir/.. && git pull; cd -; \
+	done
 	git pull
-
-components/%:
-	cd $@ && git pull
 
 test-cov=coverage.html
 coverage.html: lib-cov test
@@ -43,4 +43,4 @@ lib-cov: lib
 	@jscoverage --no-highlight lib lib-cov
 	@touch lib-cov
 
-.PHONY: test-cov
+.PHONY: test-cov git-up
