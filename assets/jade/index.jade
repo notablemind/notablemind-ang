@@ -16,9 +16,10 @@ block container
     #pages.row-fluid(ng-view)
     .templates
       script(id='noteList.html', type='text/ng-template')
-        .note(ng-repeat="child in note.children", data-note="child")
-      script(id="settings.html", type="text/ng-template").
-        Nothing to see here.
+        .note.top-note(data-note='note', data-parent='true')
+      script(id="settings.html", type="text/ng-template")
+        .settings-manager(data-settingsmanager='settings')
+          This should be replaced
 
 append endjs
   script.

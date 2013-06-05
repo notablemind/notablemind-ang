@@ -1,6 +1,6 @@
 REPORTER = spec
 
-build: components
+build: components static static/css
 	@component build --use component-stylus
 
 components: component.json
@@ -9,8 +9,14 @@ components: component.json
 server:
 	supervisor app.js
 
+static: assets/jade
+	jade -P assets/jade -o static/
+
 watch-jade:
 	jade -w -P assets/jade -o static/
+
+static/css: assets/styl
+	stylus assets/styl -o static/css/
 
 watch-styl:
 	stylus --watch assets/styl -o static/css/

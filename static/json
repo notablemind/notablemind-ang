@@ -1,0 +1,2903 @@
+[
+  {
+    "title": "users",
+    "tags": [],
+    "properties": {
+      "id": "51ad799ccf94219521000001",
+      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+    },
+    "children": [
+      {
+        "title": "For the moment, I won't have anything hosted -- you run it locally. I can make it pretty easy to run locally, though. Could I package it up to run on windows? Looks like Node'll install just fine!",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf94219521000002",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "http://dailyjs.com/2012/05/03/windows-and-node-1/",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000003",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "auth",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf94219521000004",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "Maybe let people start outlining before they're even logged in. Give them a taste, so they can get hooked ;)",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000005",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Major Items",
+    "tags": [],
+    "properties": {
+      "id": "51ad799ccf94219521000006",
+      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+    },
+    "children": [
+      {
+        "title": "Making something a major item will make the font size bigger, I imagine.",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf94219521000007",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": []
+      },
+      {
+        "title": "they are allowed to be used as tags.",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf94219521000008",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "Ha! that way, not everything can be a tag. Also, non-major items don't need slugs! Right? Because they can't be referenced in any way. Pretty sure. This is *awesome*.",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000009",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "you can view them alone",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf9421952100000a",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "whiteboard",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf9421952100000b",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "columns",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf9421952100000c",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Formal Backend",
+    "tags": [],
+    "properties": {
+      "type": "major",
+      "id": "1",
+      "slug": "formal-backend",
+      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+    },
+    "children": [
+      {
+        "title": "data format",
+        "tags": [],
+        "properties": {
+          "id": "51ad7b980f6f5c5830000001",
+          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "example item with title and tags",
+            "tags": [
+              "tag1",
+              "tag2/thing"
+            ],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000002",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": ":PROPERTIES:",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000003",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":collapsed: true",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000004",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":type: note | todo | question | quote | qquote | file | major",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000005",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":created: date",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000006",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":modified: date",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000007",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "-- major items only --",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000008",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "// body will be found in [slug]/_index.org",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000009",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":slug: example-item",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000000a",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "// first item == grid size",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000000b",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "// (x y [width] [height]) - is auto",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000000c",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":whiteboard: 10 (100 200) (0 50) (10 20 - 100) (350 400 200 -)",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000000d",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":end:",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000000e",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "the JSON",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000000f",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "items will be unaware of their order.",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000010",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "title:",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000011",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "oid:",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000012",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "major_parents: [slugg1, slugg2, ...]",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000013",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "parent:",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000014",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "children: [child1, child2]",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000015",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "type:",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000016",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "created:",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000017",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "modified:",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000018",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "// other attributes",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000019",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "endpoints",
+        "tags": [],
+        "properties": {
+          "id": "51ad7b980f6f5c583000001a",
+          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "load-all/?major-oid : list all items",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000001b",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "update/slugs/oid <- json : change an item",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000001c",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "children given as ids",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000001d",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "add <- json, parent, position : add an item",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000001e",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "promote/slugs/oid : promote an item to being a major item",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000001f",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "demote/slugs/oid : un-majorfy",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000020",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "delete/slugs/oid : [will really just disable...]",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000021",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "Will move it to a global deleted.org",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000022",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "attach/slugs/oid <- raw data...",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000023",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "move/slugs/oid <- new slugs, new parent, new order",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000024",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "If I want to get more fancy ... once I care about efficiency?",
+        "tags": [],
+        "properties": {
+          "id": "51ad7b980f6f5c5830000025",
+          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "sync : give me everything you've got",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000026",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "update : send changes, get changes",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000027",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "utility functions",
+        "tags": [],
+        "properties": {
+          "id": "51ad7b980f6f5c5830000028",
+          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "DONE parse",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000029",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "DONE write",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000002a",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "DONE promote",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000002b",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "TODO demote",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000002c",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "At the start, give them some useful/informative default project.",
+        "tags": [],
+        "properties": {},
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "error handling",
+    "tags": [],
+    "properties": {
+      "id": "51ad799ccf9421952100000d",
+      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+    },
+    "children": [
+      {
+        "title": "Need a relatively robust way of letting the user know that they messed up the backend org files.",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf9421952100000e",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "UI",
+    "tags": [],
+    "properties": {
+      "id": "51ad799ccf9421952100000f",
+      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+    },
+    "children": [
+      {
+        "title": "input",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf94219521000010",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "prevent taggage",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000011",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "So if they input \"text text text :taglike:taglike:\" I don't want to swollow it. So I think I'll end all of their input (where there are no tags to be found) with '. And then I'll strip it off on read. If there are tags defined, then the \"taglikes\" at the end of their stuff won't be confusing.",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000012",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "prevent HTMLage",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000013",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "If they put in \"<\" or \">\", then they just forfeighted org back-conversion. boo hoo. Otherwise (as long as there's nothing else funny going on), I'll convert back to org-modish. Then you'll have *bold* and /italics/ and such. ",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000014",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "newlines",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000015",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "For now, I won't allow them. Just make another item. Yup. So, the org-mode output items will be full of ghastly long lines. deal with it. Tags will be only alphanum and - for spaces. and / for nesting. then : to sep. So my title line can look like:",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000016",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "*** text text text",
+                "tags": [
+                  "tag",
+                  "tag",
+                  "tag"
+                ],
+                "properties": {
+                  "id": "51ad799ccf94219521000017",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":properties:",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000018",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":thing1:",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000019",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":thing2:",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100001a",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":end:",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100001b",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "?? do I let them write long expansive things here? Not atm. If I feel like I need it, then maybe.",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100001c",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "Actually, perhaps items without any special stuff ... can just be hmmm nope. Because intermixing wouldn't work. OK no body atm.",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100001d",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "symbols to start an item",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf9421952100001e",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "for the moment I won't actively disallow, some will just be magic. ",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100001f",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "TODO maybe disallow symbols to start?",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000020",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "view",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf94219521000021",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "whiteboard",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000022",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "columns",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000023",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "This creates as many columns as you have sub-items ... is that what I want? Maybe I'll actually probably max out at 6 or something, and then have them float:left. so you get them stacked kindof. Maybe not my favorite, but good enough for now.",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000024",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "journal",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000025",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "only changes items without children",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000026",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": [
+                  {
+                    "title": "no bullets",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad799ccf94219521000027",
+                      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "indented first line",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad799ccf94219521000028",
+                      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Interaction",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf94219521000029",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "click on a tag",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf9421952100002a",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "filter within this major item",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100002b",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "jump to this tag's page. maybe with the \"offsite link\" icon thing?",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100002c",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "customization",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf9421952100002d",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "per-item",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf9421952100002e",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "let you define the \"default item\" for a given major item.",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100002f",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": [
+                  {
+                    "title": "item type",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad799ccf94219521000030",
+                      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                    },
+                    "children": [
+                      {
+                        "title": "This is useful like in a meeting. Default = quote",
+                        "tags": [],
+                        "properties": {
+                          "id": "51ad799ccf94219521000031",
+                          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "title": "WONTFIX contents (with special %date, etc) ? /maybe not.../",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad799ccf94219521000032",
+                      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "keyboard shortcuts",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000033",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "C-? tie to actions...like",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000034",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": [
+                  {
+                    "title": "make this a [some type]",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad799ccf94219521000035",
+                      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "add a tag/person",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad799ccf94219521000036",
+                      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "prefixes for different types.",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000037",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "These would be activated by typing the character",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000038",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "! todo",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000039",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "' quote",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100003a",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "\" quote introduced by someone else (double attribution) =) love that it's a double quote",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100003b",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "$ scripture. possibly a book, too",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100003c",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "theme",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf9421952100003d",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "have a number to choose from",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100003e",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": [
+                  {
+                    "title": "solarized",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad799ccf9421952100003f",
+                      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "sublime =)",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad799ccf94219521000040",
+                      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "workflowy",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad799ccf94219521000041",
+                      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "make it easy to define new ones.",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad799ccf94219521000042",
+                      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                    },
+                    "children": [
+                      {
+                        "title": "It should just be a [stylus] file with constants. And then my build tool would make a theme-xx.css with all of the relevant things inside a body.theme-xx selector.",
+                        "tags": [],
+                        "properties": {
+                          "id": "51ad799ccf94219521000043",
+                          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                        },
+                        "children": []
+                      },
+                      {
+                        "title": "Or they could do more exciting things. ",
+                        "tags": [],
+                        "properties": {
+                          "id": "51ad799ccf94219521000044",
+                          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                        },
+                        "children": []
+                      },
+                      {
+                        "title": "my tpl would be:",
+                        "tags": [],
+                        "properties": {
+                          "id": "51ad799ccf94219521000045",
+                          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                        },
+                        "children": []
+                      },
+                      {
+                        "title": "body.theme-[name] { @import \"themes/theme-name\" }",
+                        "tags": [],
+                        "properties": {
+                          "id": "51ad799ccf94219521000046",
+                          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                        },
+                        "children": []
+                      },
+                      {
+                        "title": "any everything would work right.",
+                        "tags": [],
+                        "properties": {
+                          "id": "51ad799ccf94219521000047",
+                          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "backfill mode",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf94219521000048",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "make all the dates be x",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000049",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "because I'm typing in notes I took at some prior time. don't real-timestamp",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100004a",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "the ability to designate something as a \"recurring meeting\"",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf9421952100004b",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "This means that when you add a sub item, the default title is just today's date.",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf9421952100004c",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "? Should I have that just be the global default?",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100004d",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "? or should I allow you to do more general things, like \"specify the jdefault for items here\"",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100004e",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "Display",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf9421952100004f",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "ability to do ordered list",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000050",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "show no bullets (journal mode)",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000051",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Backend Brainstorm",
+    "tags": [],
+    "properties": {
+      "type": "major",
+      "id": "2",
+      "slug": "backend-brainstorm",
+      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+    },
+    "children": [
+      {
+        "title": "types",
+        "tags": [],
+        "properties": {
+          "id": "51ad7b980f6f5c583000002d",
+          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "org-mode",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000002e",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "db? (sometime in the future... not first priority)",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000002f",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "export",
+        "tags": [],
+        "properties": {
+          "id": "51ad7b980f6f5c5830000030",
+          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "use #+INCLUDE: \"file-name.org\" src for each major item.",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000031",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "org-mode =)",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000032",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "pdf?",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000033",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "html?",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000034",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "latex?",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000035",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "beamer?",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000036",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "or maybe just refer you to emacs =)",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000037",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "file organization",
+        "tags": [],
+        "properties": {
+          "id": "51ad7b980f6f5c5830000038",
+          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "I think that each major-item will get it's own folder. The name can be the slug.",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000039",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "file attachment",
+        "tags": [],
+        "properties": {
+          "id": "51ad7b980f6f5c583000003a",
+          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "? do I want attachment organization to be recognizable via the directory structure? ",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000003b",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "Yes",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000003c",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "I think I'll give each major item a directory. so....",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000003d",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "/major-one/_index.org",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000003e",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "/major-one/file1.png",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000003f",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "/major-one/sub-major-1.org",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000040",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "/major-2/_index.org",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000041",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "/major-2/file.doc",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000042",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "/major-2/frown.jpeg",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000043",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "/major-3/other.org",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000044",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "Also: auto-list",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000045",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": [
+                  {
+                    "title": "If there are any files not explicitly \"attached\", list them at the end",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000046",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "version control!!!",
+        "tags": [],
+        "properties": {
+          "id": "51ad7b980f6f5c5830000047",
+          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "So what's the deal here? It would be super awesome if you could VC your org-mode files, and they would do something reasonable. Do I want to be able to auto-merge reasonably?",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000048",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "Things in the way of auto-merge",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000049",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "renaming a tag/item, or rearranging them",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000004a",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": [
+                  {
+                    "title": "Merge conflicts would be big old gnarly bears. Of course, I could give it the old college try. But I don't know just how successful I would be.",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000004b",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "check for edit difference",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000004c",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "check for same/similar children",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000004d",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "check for items that are missing in the current tree.",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000004e",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Note Types:",
+        "tags": [],
+        "properties": {
+          "id": "51ad7b980f6f5c583000004f",
+          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "Major notes ... is a type. So no weird mixings. =) awesome.",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000050",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "General Org Syntax I support:",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000051",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "In the title",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000052",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": [
+                  {
+                    "title": "TODO | DONE",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000053",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": ":T:A:GS:",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000054",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "? PRIORITY [#A] etc.",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000055",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "title": "In the properties",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000056",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": [
+                  {
+                    "title": ":ID: UID",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000057",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": ":CATEGORY: category",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000058",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "? :ORDERED:",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000059",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "title": "In the body",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000005a",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": [
+                  {
+                    "title": "CLOCK: [timestamp] => HH:MM",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000005b",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "CLOCK: [timestamp]--[timestamp] => HH:MM",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000005c",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "DEADLINE: <timestamp>",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000005d",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "SCHEDULED: <timestamp>",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000005e",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "CLOSED: <timestamp>",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000005f",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "Time stamps:",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000060",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "DATE = YYYY-MM-DD DAYNAME",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000061",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "REPEATER follows the patter:",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000062",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": [
+                      {
+                        "title": "MARK VALUE UNIT",
+                        "tags": [],
+                        "properties": {
+                          "id": "51ad7b980f6f5c5830000063",
+                          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                        },
+                        "children": []
+                      },
+                      {
+                        "title": "MARK is + (cumulate type), ++ (catch-up type) or .+ (restart type).",
+                        "tags": [],
+                        "properties": {
+                          "id": "51ad7b980f6f5c5830000064",
+                          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                        },
+                        "children": []
+                      },
+                      {
+                        "title": "VALUE is a number.",
+                        "tags": [],
+                        "properties": {
+                          "id": "51ad7b980f6f5c5830000065",
+                          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                        },
+                        "children": []
+                      },
+                      {
+                        "title": "UNIT is a character among h (hour), d (day), w (week), m (month), y (year).",
+                        "tags": [],
+                        "properties": {
+                          "id": "51ad7b980f6f5c5830000066",
+                          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                        },
+                        "children": []
+                      },
+                      {
+                        "title": "MARK, VALUE and UNIT are not separated by whitespace characters.",
+                        "tags": [],
+                        "properties": {
+                          "id": "51ad7b980f6f5c5830000067",
+                          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "title": "<DATE TIME REPEATER>                         (active)",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000068",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "[DATE TIME REPEATER]                         (inactive)",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000069",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "<DATE TIME REPEATER>--<DATE TIME REPEATER>   (active range)",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000006a",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "<DATE TIME-TIME REPEATER>                    (active range)",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000006b",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "[DATE TIME REPEATER]--[DATE TIME REPEATER]   (inactive range)",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000006c",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "[DATE TIME-TIME REPEATER]                    (inactive range)",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000006d",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Major note",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000006e",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": ":type: major",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000006f",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":slug: example-item",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000070",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":whiteboard: 10 (100 200) (0 50) (10 20 - 100) (350 400 200 -)",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000071",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": [
+                  {
+                    "title": "// first item == grid size",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000072",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "// (x y [width] [height]) - is auto",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000073",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "just a file",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000074",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "I think I should special-case this. Because generally things will be able to have files attached to them .. right? or should I stick to my guns, and only allow files by themselves. Yeah. Can they have children?",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000075",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":type: file",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000076",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":name: file-name.ext",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000077",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":preview-inline: bool",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000078",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "If it's previewable, and preview-inline is true, just stick it in there.",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000079",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "question [icon]",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000007a",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": ":type: question",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000007b",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "someone else's question",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000007c",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": ":type: question",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000007d",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":asker: @person",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000007e",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "todo",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000007f",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": ":type: todo",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000080",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":deadline: <date>",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000081",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":completed: <date>",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000082",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "should I just manage the status via tags? hmmm",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000083",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":status: ?? ",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000084",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "decide (a decision needs to be made). meybe call this choose instead.",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000085",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "Acts like a radio button group",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000086",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":type: decide",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000087",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":picked: #",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000088",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "reference/citation",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c5830000089",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "Have the ability to mark a major note as a \"book review\" or something along those lines. Notes about a book. So the default item is a reference with the said book filled in.",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000008a",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":type: reference",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000008b",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":work: name of work...?",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000008c",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": ":page: page number",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000008d",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "file attachment! =) just file name.",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000008e",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "if it's marked \"preview\", then show the preview inline. Otherwise popover?",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c583000008f",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "Previewable File Types",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000090",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": [
+                  {
+                    "title": "html",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000091",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": [
+                      {
+                        "title": "first 10 lines",
+                        "tags": [],
+                        "properties": {
+                          "id": "51ad7b980f6f5c5830000092",
+                          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "title": "txt",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000093",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": [
+                      {
+                        "title": "first 10 lines",
+                        "tags": [],
+                        "properties": {
+                          "id": "51ad7b980f6f5c5830000094",
+                          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "title": "png",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000095",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "jpeg",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000096",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "gif",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000097",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "title": "Maybe",
+                "tags": [],
+                "properties": {
+                  "id": "51ad7b980f6f5c5830000098",
+                  "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                },
+                "children": [
+                  {
+                    "title": "doc",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c5830000099",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "pdf",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000009a",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  },
+                  {
+                    "title": "odt",
+                    "tags": [],
+                    "properties": {
+                      "id": "51ad7b980f6f5c583000009b",
+                      "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+                      "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Format constraints",
+        "tags": [],
+        "properties": {
+          "id": "51ad7b980f6f5c583000009c",
+          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "I think I'll restrict them to starting their item with either a letter or a number. Because then, I can do special things, like making it a todo when they start with ! *So I decided not to enforce this* for the time being",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000009d",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "slugs",
+        "tags": [],
+        "properties": {
+          "id": "51ad7b980f6f5c583000009e",
+          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "every item has a \"slug\". That way tags are more intuitive.",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c583000009f",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "? should this be globally unique? probably not.",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c58300000a0",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "? what when two items with the same slug are put in the same list? (if it wasn't done through the gui) we complain, and let the user figure it out.",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c58300000a1",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "created by lower(remove(all non alphanum except -)) -join first 3 words",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c58300000a2",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "Doesn't need to be static. I just have to check all connections when you do change something.",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c58300000a3",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "Format for things",
+        "tags": [],
+        "properties": {
+          "id": "51ad7b980f6f5c58300000a4",
+          "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "Should it be markdown? restructuredtext? Some fancy things (like my scripture awesomeness) can't really be captured by rst or md. It would need to be html. Hmmm... but typing on the backend would be much more awesome in rst or md. or org.",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c58300000a5",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "Well, since I don't let people start with wierd characters",
+            "tags": [],
+            "properties": {
+              "id": "51ad7b980f6f5c58300000a6",
+              "created": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "I could always check. And if the text starts with <div>, then it's html. Otherwise, it's org. (mk maybe rst. jury's still out).",
+                "tags": [],
+                "properties": {},
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Tags",
+    "tags": [],
+    "properties": {
+      "id": "51ad799ccf94219521000052",
+      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+    },
+    "children": [
+      {
+        "title": "WONTFIX Local Tags",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf94219521000053",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "You can declare a tag to be local by starting with '-'. Or maybe not. no, make this pretty low priority. Still need to think about that.",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000054",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "Initial idea was to construct a matching hiierarchy in the tags folder, using the slugs of all the parent items of where you are right now ... but that feels too messy.",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000055",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "Ok, so here's a better idea",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000056",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "Have the ability to mark an item as a \"major\" item, which means it can own its own tags. Local tags for this item that are created will be dropped into a special #tags item at the start of the list. ? And then \"-tagname\" will look up the tree for the first \"major\" item, and then \"--tagname\" will look up for the second one ",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000057",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "Except I don't think we even need that.",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000058",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "b/c when you're viewing a tag, you can totally view items in hierarchical order ... right?",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000059",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Tag View",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf9421952100005a",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "regardless, you will be able to expand an item with children.",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf9421952100005b",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "flat: just give me all items with that tag",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf9421952100005c",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "In this mode, you'll still be able to mouseover an item and see it's lineage in a popover or something. And you'll be able to select it, I imagine. Select in a split pane? I totally need split panes.",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100005d",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "nested: give me all items with that tag and their parents in a tree view",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf9421952100005e",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "This way you can look at items in some context",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100005f",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "nested-major",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000060",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "So again with the idea of a \"major\" item. A header, if you will. Then you see everything flattened only to within the hierarchy of major items. I feel like that would be cool.",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf94219521000061",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Scriptures",
+    "tags": [],
+    "properties": {
+      "id": "51ad799ccf94219521000062",
+      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+    },
+    "children": [
+      {
+        "title": "Because I like them. I like them a lot. So \"`ref`s\" will be linked to lds.org. Mouseover will popover the text. \"`ref`<s\" is expanded to the scipture. And it will be contained in something like a \"<span class='srcipture'>\" tag.",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf94219521000063",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": []
+      }
+    ]
+  },
+  {
+    "title": "Links",
+    "tags": [],
+    "properties": {
+      "id": "51ad799ccf94219521000064",
+      "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+      "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+    },
+    "children": [
+      {
+        "title": "custom \"directives\"? alles in markdown, I think is best. or maybe rst. Looks like markdown doesn't support custom directives",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf94219521000065",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "ex: add \"scripture\" directive, which ... mmm maybe that would be too complex for a non-programmer. b/c it needs to know about all the types of books, parse the thing, and then gen the link on the fly.",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000066",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "People",
+        "tags": [],
+        "properties": {
+          "id": "51ad799ccf94219521000067",
+          "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+          "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+        },
+        "children": [
+          {
+            "title": "People are also major, but they're only allowed in /people toplevel major, and when they're used as tags...we know they're people. For all org-mode knows, though, they're just tags.",
+            "tags": [
+              "people/jared-forsyth"
+            ],
+            "properties": {
+              "id": "51ad799ccf94219521000068",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "For display, we change things up.",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf94219521000069",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": []
+          },
+          {
+            "title": "keep track of people.",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf9421952100006a",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "they're like tags, but handled separately. They do all get their own auto-linked entry in people/. You can move this around, though (but not outside of people) But you can make categories of people. and these categories are legal \"people\" too. So you really have sub-people. But we'll just smile and nod.",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100006b",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "title": "Info about a person",
+            "tags": [],
+            "properties": {
+              "id": "51ad799ccf9421952100006c",
+              "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+              "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+            },
+            "children": [
+              {
+                "title": "If it doesn't belong in a meeting or elsewhere in notes, then you can just add it as a note to the person. But otherwise, just @person them (or similar).",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100006d",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "[#C] !! Be able to define \"primary\" and \"secondary\" tags & people.",
+                "tags": [],
+                "properties": {
+                  "id": "51ad799ccf9421952100006e",
+                  "created": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)",
+                  "modified": "Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)"
+                },
+                "children": []
+              },
+              {
+                "title": "As in, this note is mainly about this person, but it @mentions this other person...",
+                "tags": [],
+                "properties": {},
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

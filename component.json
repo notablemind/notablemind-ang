@@ -7,6 +7,8 @@
   "dependencies": {
     "notablemind/angular-loader": "*",
     "notablemind/angular-resource": "*",
+    "notablemind/settings": "*",
+    "notablemind/settings-shortcut": "*",
     "jabapyth/angularjs": "*",
     "notablemind/note": "*"
   },
@@ -14,6 +16,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": [
-    "index.js"
+    "index.js",
+    "settings.js"
   ]
 }
