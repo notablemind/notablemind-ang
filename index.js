@@ -18,7 +18,7 @@ var app = angular.module('notablemind', ['ngResource', 'note'])
     }).when('/settings', {
       templateUrl: 'settings.html',
       controller: 'Settings'
-    }).otherwise({redirectTo: '/'});
+    }).otherwise({redirectTo: '/settings'});
     $lp.html5Mode(true);
   }]).run(function($location) {
     if (window.client_route)
