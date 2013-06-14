@@ -1,10 +1,13 @@
 REPORTER = spec
 
-build: components
-	@component build --use component-stylus
+build: components node_modules
+	@component build --dev --use component-stylus
 
 components: component.json
 	@component install
+
+node_modules:
+	@npm install
 
 server:
 	supervisor app.js
@@ -26,6 +29,9 @@ test: lib
 		--reporter $(REPORTER)
 	@touch test
 
+reboot:
+	@rm -rf node_modules components
+
 subrepos := $(wildcard components/*/.git)
 
 git-up:
@@ -43,4 +49,4 @@ lib-cov: lib
 	@jscoverage --no-highlight lib lib-cov
 	@touch lib-cov
 
-.PHONY: test-cov git-up
+.PHONY: test-cov git-up test

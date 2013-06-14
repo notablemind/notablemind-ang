@@ -1,13 +1,16 @@
 
-var loader = require('angular-loader');
-
 // load angular components
-loader('note', require('note'));
+require('note');
 
-var angular = require('angularjs');
+var angular = require('angularjs')
+  , settings = require('settings')
+  , angularSettings = require('angular-settings');
+
+angularSettings.factory('settings', settings.getSettings());
+
 require('angular-resource');
 
-var app = angular.module('notablemind', ['ngResource', 'note'])
+var app = angular.module('notablemind', ['ngResource', 'note', 'settings'])
   .config(['$routeProvider', '$locationProvider', function($rp, $lp) {
     $rp.when('/', {
       templateUrl: 'noteList.html',

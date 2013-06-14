@@ -5,9 +5,11 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "notablemind/angular-loader": "*",
     "notablemind/angular-resource": "*",
     "jabapyth/angularjs": "*",
+    "notablemind/angular-settings": "*",
+    "notablemind/settings": "*",
+    "notablemind/loco": "*",
     "notablemind/note": "*"
   },
   "development": {},
