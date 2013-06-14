@@ -16,7 +16,7 @@ block container
     #pages.row-fluid(ng-view)
     .templates
       script(id='noteList.html', type='text/ng-template')
-        .note(ng-repeat="child in note.children", data-note="child")
+        .top-note(data-note="note")
       script(id="settings.html", type="text/ng-template").
         Nothing to see here.
 
