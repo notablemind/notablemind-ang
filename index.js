@@ -1,19 +1,22 @@
 
-var loader = require('angular-loader');
-var defaultSettings = require('./settings');
-var settings = require('settings');
-
 // load angular components
-loader('note', require('note'));
-loader('settingsmanager', settings);
+require('note');
 
-var angular = require('angularjs');
+var angular = require('angularjs')
+  , settings = require('settings')
+  , angularSettings = require('angular-settings');
+
+angularSettings.factory('settings', settings.getSettings());
+
+angularSettings.config('default', {
+  name: 'default',
+  sub: 'note',
+  pages: ['nav']
+});
+
 require('angular-resource');
 
-var settingsShortcut = require('settings-shortcut');
-settings.register('keyboard-shortcut', settingsShortcut);
-
-var app = angular.module('notablemind', ['ngResource', 'note', 'settingsmanager'])
+var app = angular.module('notablemind', ['ngResource', 'note', 'settings'])
   .config(['$routeProvider', '$locationProvider', function($rp, $lp) {
     $rp.when('/', {
       templateUrl: 'noteList.html',
@@ -42,8 +45,7 @@ app.controller('NoteList', function NoteList($scope, $routeParams, db) {
   console.log(db.length);
 });
 
-app.controller('Settings', function Settings($scope, $routeParams, settings) {
-  $scope.settings = settings;
+app.controller('Settings', function Settings($scope, $routeParams, db) {
 });
 
 app.factory('db', ['$resource', function($resource) {

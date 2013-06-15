@@ -1,16 +1,26 @@
 REPORTER = spec
 
-build: components static static/css
-	@component build --use component-stylus
+build: components node_modules static static/css
+	@component build --dev --use component-stylus
 
 components: component.json
 	@component install
+
+node_modules:
+	@npm install
 
 server:
 	supervisor app.js
 
 static: assets/jade
 	jade -P assets/jade -o static/
+=======
+template_files := $(patsubst assets/jade/%.jade,static/%.html,$(wildcard assets/jade/*.jade))
+
+templates: $(template_files)
+
+static/%.html: assets/jade/%.jade
+	@jade -o static $<
 
 watch-jade:
 	jade -w -P assets/jade -o static/
@@ -32,6 +42,9 @@ test: lib
 		--reporter $(REPORTER)
 	@touch test
 
+reboot:
+	@rm -rf node_modules components
+
 subrepos := $(wildcard components/*/.git)
 
 git-up:
@@ -49,4 +62,4 @@ lib-cov: lib
 	@jscoverage --no-highlight lib lib-cov
 	@touch lib-cov
 
-.PHONY: test-cov git-up
+.PHONY: test-cov git-up test

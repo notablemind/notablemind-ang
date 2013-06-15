@@ -9,6 +9,9 @@
     "notablemind/settings": "*",
     "notablemind/settings-shortcut": "*",
     "jabapyth/angularjs": "*",
+    "notablemind/angular-settings": "*",
+    "notablemind/settings": "*",
+    "notablemind/loco": "*",
     "notablemind/note": "*"
   },
   "development": {},
