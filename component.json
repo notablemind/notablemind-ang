@@ -16,9 +16,11 @@
   },
   "development": {},
   "license": "MIT",
-  "main": "index.js",
+  "main": "assets/index.js",
   "scripts": [
-    "index.js",
-    "settings.js"
+    "assets/index.js",
+    "assets/angular.js",
+    "assets/settings.js",
+    "assets/defaultSettings.js"
   ]
 }

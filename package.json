@@ -13,6 +13,7 @@
     "socket.io": "*",
     "org-lite": "0.0.0",
     "bson": "~0.1.9",
+    "memmify": "*",
     "component-builder": "~0.8.2",
     "component-stylus": "~1.1.3"
   },

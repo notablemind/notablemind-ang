@@ -7,11 +7,12 @@ var express = require('express')
   , app = express()
   , server = require('http').createServer(app)
   , io = require('socket.io').listen(server)
-  , routes = require('./routes')
   , http = require('http')
   , path = require('path')
   , fs = require('fs')
 
+  , routes = require('./routes')
+  , settings = require('./routes/settings')
   , org = require('org-lite');
 
 // all environments
@@ -48,8 +49,21 @@ server.listen(app.get('port'), function(){
 });
 
 io.sockets.on('connection', function (socket) {
-  socket.emit('news', { hello: 'world' });
-  socket.on('my other event', function (data) {
-    console.log(data);
+  socket.on('load-settings', function (data) {
+    settings.load(function (err, json) {
+      if (err) return socket.emit('error', {cmd: 'load-settings', error: err});
+      socket.emit('load-settings', json);
+    });
+  });
+  socket.on('save-settings', function (data) {
+    settings.save(data, function (err) {
+      if (err) return socket.emit('error', {cmd: 'save-settings', error: err});
+    });
+  });
+  socket.on('setting-change', function (data) {
+    settings.saveOne(data.name, data.value, function (err) {
+      if (err) return socket.emit('error', {cmd: 'setting-change', error: err});
+    });
   });
 });
+

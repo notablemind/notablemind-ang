@@ -18,7 +18,7 @@ block container
       script(id='noteList.html', type='text/ng-template')
         .note.top-note(data-note='note', data-parent='true')
       script(id="settings.html", type="text/ng-template")
-        .settings-manager(data-settings-manager='settings')
+        .settings-manager(data-settings-manager='notablemind')
           This should be replaced
 
 append endjs
@@ -41,6 +41,9 @@ append endjs
       'ajax-profile-register': "{% url 'ajax-profile-register' %}"
     };
   script(src="/js/build.js")
+  script(src="/socket.io/socket.io.js")
+  script.
+    var socket = io.connect(location.protocol + '//' + location.hostname);
   script.
     var nm = require('notablemind');
 

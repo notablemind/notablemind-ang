@@ -14,7 +14,7 @@ server:
 
 static: assets/jade
 	jade -P assets/jade -o static/
-=======
+
 template_files := $(patsubst assets/jade/%.jade,static/%.html,$(wildcard assets/jade/*.jade))
 
 templates: $(template_files)
