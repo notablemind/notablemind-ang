@@ -9,8 +9,8 @@ components: component.json
 node_modules:
 	@npm install
 
-server:
-	supervisor app.js
+serve: build
+	nodemon app.js
 
 static: assets/jade
 	jade -P assets/jade -o static/
@@ -37,7 +37,10 @@ watch-test:
 watch-cov:
 	supervisor -n exit -w lib,test -e txt,js -x make -- test-cov -B -s
 
-test: lib
+test:
+	@echo "No tests yet"
+
+oldtest: lib
 	@NODE_ENV=test ./node_modules/.bin/mocha \
 		--reporter $(REPORTER)
 	@touch test
