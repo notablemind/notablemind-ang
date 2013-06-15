@@ -5,7 +5,6 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "notablemind/angular-loader": "*",
     "notablemind/angular-resource": "*",
     "notablemind/settings": "*",
     "notablemind/settings-shortcut": "*",

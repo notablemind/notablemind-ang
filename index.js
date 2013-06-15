@@ -47,7 +47,7 @@ app.controller('Settings', function Settings($scope, $routeParams, settings) {
 });
 
 app.factory('db', ['$resource', function($resource) {
-  return $resource('/json', {}, {
+  return $resource('/static.json', {}, {
     'getAll': {method: 'GET', isArray: true}
   }).getAll();
 }]);

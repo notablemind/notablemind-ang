@@ -10,6 +10,7 @@ var express = require('express')
   , routes = require('./routes')
   , http = require('http')
   , path = require('path')
+  , fs = require('fs')
 
   , org = require('org-lite');
 
@@ -24,10 +25,10 @@ app.use(express.methodOverride());
 app.use(express.cookieParser('your secret here'));
 app.use(express.session());
 app.use(app.router);
-app.use(require('stylus').middleware(__dirname + '/public'));
+app.use(require('stylus').middleware(__dirname + '/static'));
 
 // most things go through here
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'static')));
 
 // development only
 if ('development' == app.get('env')) {
@@ -36,6 +37,11 @@ if ('development' == app.get('env')) {
 
 app.get('/json', routes.index);
 // app.get('/users', user.list);
+var index = function(req, res) {
+  res.send(fs.readFileSync(path.join(__dirname, 'static', 'index.html'), {encoding:'utf8'}));
+}
+app.get('/settings', index);
+app.get('/config', index);
 
 server.listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
