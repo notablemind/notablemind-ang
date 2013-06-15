@@ -16,7 +16,7 @@ app.controller('Settings', function Settings($scope, $routeParams, db) {
 
 app.addRoute('/settings', 'settings', 'Settings');
 
-app.run(function($location){
+app.run(function($route, $rootScope) {
   socket.emit('load-settings', {});
   socket.on('load-settings', function (json) {
     if (json === false) {
@@ -24,7 +24,8 @@ app.run(function($location){
     }
     console.log('loading settings');
     settings.load(json);
-    $location.url($location.url());
+    $route.reload();
+    $rootScope.$digest();
   });
   socket.on('error', function (data) {
     console.log('Error from server:', data);
