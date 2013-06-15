@@ -12,6 +12,13 @@ node_modules:
 server:
 	supervisor app.js
 
+template_files := $(patsubst assets/jade/%.jade,static/%.html,$(wildcard assets/jade/*.jade))
+
+templates: $(template_files)
+
+static/%.html: assets/jade/%.jade
+	@jade -o static $<
+
 watch-jade:
 	jade -w -P assets/jade -o static/
 

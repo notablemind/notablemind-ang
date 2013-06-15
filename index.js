@@ -8,6 +8,12 @@ var angular = require('angularjs')
 
 angularSettings.factory('settings', settings.getSettings());
 
+angularSettings.config('default', {
+  name: 'default',
+  sub: 'note',
+  pages: ['nav']
+});
+
 require('angular-resource');
 
 var app = angular.module('notablemind', ['ngResource', 'note', 'settings'])
@@ -32,6 +38,9 @@ app.controller('NoteList', function NoteList($scope, $routeParams, db) {
   $scope.note = {'title': 'All Notes', properties: {type: 'major'}, "children": db};
   window.db=db;
   console.log(db.length);
+});
+
+app.controller('Settings', function Settings($scope, $routeParams, db) {
 });
 
 app.factory('db', ['$resource', function($resource) {
