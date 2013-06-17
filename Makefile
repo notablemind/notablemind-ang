@@ -9,7 +9,7 @@ components: component.json
 node_modules:
 	@npm install
 
-serve: build
+serve: build templates
 	nodemon app.js
 
 static: assets/jade

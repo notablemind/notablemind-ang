@@ -39,10 +39,11 @@ if ('development' == app.get('env')) {
 app.get('/json', routes.index);
 // app.get('/users', user.list);
 var index = function(req, res) {
-  res.send(fs.readFileSync(path.join(__dirname, 'static', 'index.html'), {encoding:'utf8'}));
+  res.send(fs.readFileSync(path.join(__dirname, 'static', 'index.html')).toString('utf8'));
 }
 app.get('/settings', index);
 app.get('/config', index);
+app.get('/', index);
 
 server.listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
