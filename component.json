@@ -22,5 +22,10 @@
     "assets/angular.js",
     "assets/settings.js",
     "assets/defaultSettings.js"
+  ],
+  "styles": [
+    "assets/styl/home.styl",
+    "assets/styl/thought.styl",
+    "assets/styl/page.styl"
   ]
 }
