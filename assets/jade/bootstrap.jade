@@ -23,6 +23,7 @@ block body
               menu = [['/', 'Home'], ['/about', 'About'], ['/contact', 'Contact']]
               each item in menu
                 li: a(href=item[0])= item[1]
+            block extra-nav
   .container
     block container
       h1

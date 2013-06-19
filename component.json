@@ -10,9 +10,9 @@
     "notablemind/settings-shortcut": "*",
     "jabapyth/angularjs": "*",
     "notablemind/angular-settings": "*",
-    "notablemind/settings": "*",
     "notablemind/loco": "*",
-    "notablemind/note": "*"
+    "notablemind/note": "*",
+    "notablemind/socketio-monitor": "*"
   },
   "development": {},
   "license": "MIT",

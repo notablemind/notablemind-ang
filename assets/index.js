@@ -4,6 +4,7 @@ require('note');
 
 var angular = require('angularjs')
   , settings = require('settings')
+  , Monitor = require('socketio-monitor')
   , angularSettings = require('angular-settings');
 
 // load settings
@@ -24,3 +25,5 @@ app.controller('NoteList', function NoteList($scope, $routeParams, db) {
   };
 });
 
+var monitor = new Monitor('#connectivity');
+monitor.attach(socket);
