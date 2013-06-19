@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node app.js",
-    "test": "./node_modules/.bin/mocha --reporter spec test/*.js",
-    "prepublish": "make freshinstall"
+    "test": "./node_modules/.bin/mocha --reporter spec test/*.js"
   },
   "dependencies": {
     "express": "3.2.4",
@@ -15,6 +14,7 @@
     "org-lite": "0.0.0",
     "bson": "~0.1.9",
     "memmify": "*",
+    "component": "*",
     "component-builder": "~0.8.2",
     "component-stylus": "~1.1.3"
   },

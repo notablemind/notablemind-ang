@@ -3,16 +3,14 @@ REPORTER = spec
 build: components node_modules static static/css
 	@component build --dev --use component-stylus
 
-freshinstall: global_npm
+local_build: components node_modules static static/css
+	@./node_modules/.bin/component build --dev --use component-stylus
 
-heroku: build templates
+heroku: local_build templates
 	@node app.js
 
-global_npm:
-	@npm install -g component jade stylus
-
 components: component.json
-	@component install
+	@./node_modules/.bin/component install
 
 node_modules:
 	@npm install
@@ -28,7 +26,7 @@ template_files := $(patsubst assets/jade/%.jade,static/%.html,$(wildcard assets/
 templates: $(template_files)
 
 static/%.html: assets/jade/%.jade
-	@jade -o static $<
+	@./node_modules/.bin/jade -o static $<
 
 watch-jade:
 	jade -w -P assets/jade -o static/
