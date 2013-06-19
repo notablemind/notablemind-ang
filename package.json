@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node app.js",
-    "test": "./node_modules/.bin/mocha --reporter spec test/*.js"
+    "test": "./node_modules/.bin/mocha --reporter spec test/*.js",
+    "prepublish": "make freshinstall"
   },
   "dependencies": {
     "express": "3.2.4",

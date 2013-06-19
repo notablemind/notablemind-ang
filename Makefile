@@ -3,6 +3,14 @@ REPORTER = spec
 build: components node_modules static static/css
 	@component build --dev --use component-stylus
 
+freshinstall: global_npm
+
+heroku: build templates
+	@node app.js
+
+global_npm:
+	@npm install -g component jade stylus
+
 components: component.json
 	@component install
 
