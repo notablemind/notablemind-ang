@@ -1,11 +1,11 @@
 
 var path = require('path')
-  ,settings_fname = path.join(__dirname, '..', 'data', 'settings.json')
+  , settings_fname = path.join(__dirname, '..', 'data', 'settings.json')
   , memmify = require('memmify')
   , cache = new memmify.JsonCache();
 
 // sends the json back, or false if the file doesn't exist
-exports.load = function (next) {
+var load = function (next) {
   cache.load(settings_fname, function (err, data) {
     if (err) {
       // file doesn't exist yet
@@ -16,8 +16,9 @@ exports.load = function (next) {
   });
 };
 
-exports.save = cache.save.bind(cache, settings_fname);
-exports.saveOne = function (name, value, next) {
+var save = cache.save.bind(cache, settings_fname);
+
+var saveOne = function (name, value, next) {
   cache.load(settings_fname, function (err, data) {
     if (err) return next(err);
     data[name] = value;
@@ -25,3 +26,46 @@ exports.saveOne = function (name, value, next) {
   });
 };
 
+var dump = function (data, next) {
+  cache.load(settings_fname, function (err, json) {
+    if (err) return next(err);
+    data.changes.forEach(function(item) {
+      json[item.name] = item.value;
+    });
+    cache.save(settings_fname, json, next.bind(null, json));
+  });
+};
+
+exports.attach = function (socket) {
+
+  socket.on('settings:load', function (data) {
+    load(function (err, json) {
+      if (err)
+        return socket.emit('error', {cmd: 'settings:load', error: err});
+      socket.emit('settings:load', json);
+    });
+  });
+
+  socket.on('settings:dump', function (data) {
+    dump(data, function (err, json) {
+      if (err) socket.emit('error', {cmd: 'settings:load', error: err});
+      socket.emit('settings:load', json);
+    });
+  });
+
+  socket.on('settings:save', function (data) {
+    save(data, function (err) {
+      if (err)
+        return socket.emit('error', {cmd: 'settings:save', error: err});
+      // TODO: do I want to send a pingback?
+    });
+  });
+
+  socket.on('settings:change', function (data) {
+    saveOne(data.name, data.value, function (err) {
+      if (err)
+        return socket.emit('error', {cmd: 'settings:change', error: err});
+    });
+  });
+
+};

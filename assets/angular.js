@@ -16,7 +16,7 @@ var app = module.exports = angular.module('notablemind', ['ngResource', 'note', 
 
 app.addRoute = function (path, tpl, ctrl) {
   routes[path] = {
-    templateUrl: tpl + '.html',
+    templateUrl: tpl,
     controller: ctrl
   };
 };

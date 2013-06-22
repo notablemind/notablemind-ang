@@ -1,4 +1,6 @@
 
+// client - main entry point
+
 // load angular components
 require('note');
 
@@ -9,10 +11,17 @@ var angular = require('angularjs')
 
 // load settings
 require('./settings');
-var app = require('./angular');
+var app = require('./angular')
+  , pages = require('./pages');
 
-app.addRoute('/', 'noteList', 'NoteList');
-app.addRoute('/list/:id', 'noteList', 'NoteList');
+function toCamelCase(title) {
+  return title[0].toLowerCase() + title.slice(1);
+};
+
+Object.keys(pages.routes).forEach(function(path) {
+  var ctrl = pages.routes[path];
+  app.addRoute(path, toCamelCase(ctrl) + '.html', ctrl);
+});
 
 app.controller('NoteList', function NoteList($scope, $routeParams, db) {
   $scope.note = {

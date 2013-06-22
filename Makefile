@@ -1,6 +1,13 @@
 REPORTER = spec
+stylus_files := $(wildcard assets/styl/*.styl)
+javascript_files := $(wildcard assets/*.js)
+template_files := $(patsubst assets/jade/%.jade,static/%.html,$(wildcard assets/jade/*.jade))
 
-build: components node_modules static static/css
+default: build/build.js
+	@:
+
+build/build.js: node_modules static/index.html $(stylus_files) $(javascript_files)
+	echo "stuff"
 	@component build --dev --use component-stylus
 
 local_build: components node_modules static static/css
@@ -12,24 +19,16 @@ heroku: local_build templates
 components: component.json
 	@./node_modules/.bin/component install
 
-node_modules:
+node_modules: package.json
+	echo "npm"
 	@npm install
 
-serve: build templates
+serve: default
 	nodemon app.js
 
-static: assets/jade
-	jade -P assets/jade -o static/
-
-template_files := $(patsubst assets/jade/%.jade,static/%.html,$(wildcard assets/jade/*.jade))
-
-templates: $(template_files)
-
-static/%.html: assets/jade/%.jade
-	@./node_modules/.bin/jade -o static $<
-
-watch-jade:
-	jade -w -P assets/jade -o static/
+static/index.html: $(wildcard assets/jade/*.jade) assets/pages.js
+	@echo "index"
+	@./build.js
 
 static/css: assets/styl
 	stylus assets/styl -o static/css/
@@ -71,4 +70,4 @@ lib-cov: lib
 	@jscoverage --no-highlight lib lib-cov
 	@touch lib-cov
 
-.PHONY: test-cov git-up test
+.PHONY: test-cov git-up test default

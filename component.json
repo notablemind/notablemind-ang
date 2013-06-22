@@ -5,6 +5,7 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
+    "FortAwesome/Font-Awesome": "*",
     "notablemind/angular-resource": "*",
     "notablemind/settings": "*",
     "notablemind/settings-shortcut": "*",
@@ -19,6 +20,7 @@
   "main": "assets/index.js",
   "scripts": [
     "assets/index.js",
+    "assets/pages.js",
     "assets/angular.js",
     "assets/settings.js",
     "assets/defaultSettings.js"

@@ -1,7 +1,5 @@
 
-/**
- * Module dependencies.
- */
+// server side - main entry point
 
 var express = require('express')
   , app = express()
@@ -26,7 +24,7 @@ app.use(express.methodOverride());
 app.use(express.cookieParser('your secret here'));
 app.use(express.session());
 app.use(app.router);
-app.use(require('stylus').middleware(__dirname + '/static'));
+// app.use(require('stylus').middleware(__dirname + '/static'));
 
 // most things go through here
 app.use(express.static(path.join(__dirname, 'static')));
@@ -41,30 +39,19 @@ app.get('/json', routes.index);
 var index = function(req, res) {
   res.send(fs.readFileSync(path.join(__dirname, 'static', 'index.html')).toString('utf8'));
 }
-app.get('/settings', index);
-app.get('/config', index);
+
 app.get('/', index);
+
+var pages = require('./assets/pages');
+Object.keys(pages.routes).forEach(function(page){
+  app.get(page, index);
+});
 
 server.listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
 
 io.sockets.on('connection', function (socket) {
-  socket.on('load-settings', function (data) {
-    settings.load(function (err, json) {
-      if (err) return socket.emit('error', {cmd: 'load-settings', error: err});
-      socket.emit('load-settings', json);
-    });
-  });
-  socket.on('save-settings', function (data) {
-    settings.save(data, function (err) {
-      if (err) return socket.emit('error', {cmd: 'save-settings', error: err});
-    });
-  });
-  socket.on('setting-change', function (data) {
-    settings.saveOne(data.name, data.value, function (err) {
-      if (err) return socket.emit('error', {cmd: 'setting-change', error: err});
-    });
-  });
+  settings.attach(socket);
 });
 

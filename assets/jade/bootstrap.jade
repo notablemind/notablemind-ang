@@ -1,6 +1,5 @@
 extends base
 
-
 append css
   link(href="/vendor/bootstrap/css/bootstrap.min.css"
        rel="stylesheet"
@@ -20,9 +19,13 @@ block body
         .nav-collapse.collapse
           ul.nav
             block navitems
-              menu = [['/', 'Home'], ['/about', 'About'], ['/contact', 'Contact']]
-              each item in menu
-                li: a(href=item[0])= item[1]
+              each item in nav
+                li
+                  a(href=item.path, target=item.target, class=(item.icon ? 'icon' : ''))
+                    if item.icon
+                      i(class=item.icon+' icon-light')
+                    if item.name
+                      span= item.name
             block extra-nav
   .container
     block container
