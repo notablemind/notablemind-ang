@@ -1,5 +1,6 @@
 
-var routes = {};
+var routes = {}
+  , request = require('superagent');
 
 var app = module.exports = angular.module('notablemind', ['ngResource', 'note', 'settings'])
   .config(['$routeProvider', '$locationProvider', function(route, location) {
@@ -23,9 +24,28 @@ app.addRoute = function (path, tpl, ctrl) {
 
 require('angular-resource');
 
-app.factory('db', ['$resource', function($resource) {
-  return $resource('/cached.json', {}, {
-    'getAll': {method: 'GET', isArray: true}
-  }).getAll();
-}]);
+function promise(getter, next) {
+  var item = null, waiting = [];
+  getter(function (err, res) {
+    if (err) return next(err);
+    item = res.body;
+    waiting.forEach(function (fn) {
+      fn(item);
+    });
+    next(null, item);
+  });
+  return function (fn) {
+    if (item !== null) return fn(item);
+    waiting.push(fn);
+  };
+}
+
+app.factory('db', function() {
+  var req = request.get('/cached.json');
+  return promise(req.end.bind(req), function (err, data) {
+    if (err) {
+      console.log('Error getting cached stuff', err);
+    }
+  });
+});
 

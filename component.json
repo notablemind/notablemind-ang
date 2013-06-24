@@ -13,6 +13,8 @@
     "notablemind/angular-settings": "*",
     "notablemind/loco": "*",
     "notablemind/note": "*",
+    "notablemind/scoped-events": "*",
+    "visionmedia/superagent": "*",
     "notablemind/socketio-monitor": "*"
   },
   "development": {},

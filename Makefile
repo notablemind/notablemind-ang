@@ -6,7 +6,7 @@ template_files := $(patsubst assets/jade/%.jade,static/%.html,$(wildcard assets/
 default: build/build.js
 	@:
 
-build/build.js: node_modules static/index.html $(stylus_files) $(javascript_files)
+build/build.js: static/index.html $(stylus_files) $(javascript_files)
 	echo "stuff"
 	@component build --dev --use component-stylus
 
