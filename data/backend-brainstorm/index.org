@@ -274,31 +274,31 @@
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-**** CLOCK: [timestamp] => HH:MM'
+**** CLOCK: [timestamp] =&gt; HH:MM'
   :PROPERTIES:
   :id: 51ad7b980f6f5c583000005b
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-**** CLOCK: [timestamp]--[timestamp] => HH:MM'
+**** CLOCK: [timestamp]--[timestamp] =&gt; HH:MM'
   :PROPERTIES:
   :id: 51ad7b980f6f5c583000005c
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-**** DEADLINE: <timestamp>'
+**** DEADLINE: &lt;timestamp&gt;'
   :PROPERTIES:
   :id: 51ad7b980f6f5c583000005d
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-**** SCHEDULED: <timestamp>'
+**** SCHEDULED: &lt;timestamp&gt;'
   :PROPERTIES:
   :id: 51ad7b980f6f5c583000005e
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-**** CLOSED: <timestamp>'
+**** CLOSED: &lt;timestamp&gt;'
   :PROPERTIES:
   :id: 51ad7b980f6f5c583000005f
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
@@ -352,7 +352,7 @@
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-**** <DATE TIME REPEATER>                         (active)'
+**** &lt;DATE TIME REPEATER&gt;                         (active)'
   :PROPERTIES:
   :id: 51ad7b980f6f5c5830000068
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
@@ -364,13 +364,13 @@
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-**** <DATE TIME REPEATER>--<DATE TIME REPEATER>   (active range)'
+**** &lt;DATE TIME REPEATER&gt;--&lt;DATE TIME REPEATER&gt;   (active range)'
   :PROPERTIES:
   :id: 51ad7b980f6f5c583000006a
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-**** <DATE TIME-TIME REPEATER>                    (active range)'
+**** &lt;DATE TIME-TIME REPEATER&gt;                    (active range)'
   :PROPERTIES:
   :id: 51ad7b980f6f5c583000006b
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
@@ -403,24 +403,6 @@
 *** :slug: example-item'
   :PROPERTIES:
   :id: 51ad7b980f6f5c5830000070
-  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
-  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
-  :END:
-*** :whiteboard: 10 (100 200) (0 50) (10 20 - 100) (350 400 200 -)'
-  :PROPERTIES:
-  :id: 51ad7b980f6f5c5830000071
-  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
-  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
-  :END:
-**** // first item == grid size'
-  :PROPERTIES:
-  :id: 51ad7b980f6f5c5830000072
-  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
-  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
-  :END:
-**** // (x y [width] [height]) - is auto'
-  :PROPERTIES:
-  :id: 51ad7b980f6f5c5830000073
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
@@ -502,13 +484,13 @@
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-*** :deadline: <date>'
+*** :deadline: &lt;date&gt;'
   :PROPERTIES:
   :id: 51ad7b980f6f5c5830000081
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-*** :completed: <date>'
+*** :completed: &lt;date&gt;'
   :PROPERTIES:
   :id: 51ad7b980f6f5c5830000082
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
@@ -730,4 +712,4 @@
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-*** I could always check. And if the text starts with <div>, then it's html. Otherwise, it's org. (mk maybe rst. jury's still out).'
+*** I could always check. And if the text starts with &lt;div&gt;, then it's html. Otherwise, it's org. (mk maybe rst. jury's still out).'

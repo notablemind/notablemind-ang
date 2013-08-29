@@ -64,11 +64,29 @@
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-*** columns'
+* columns'
   :PROPERTIES:
   :id: 51ad799ccf9421952100000c
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+* :whiteboard: 10 (100 200) (0 50) (10 20 - 100) (350 400 200 -)'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000071
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** // first item == grid size'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000072
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** // (x y [width] [height]) - is auto'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000073
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
 * Formal Backend'
   :PROPERTIES:
@@ -120,7 +138,7 @@
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-**** If they put in "<" or ">", then they just forfeighted org back-conversion. boo hoo. Otherwise (as long as there's nothing else funny going on), I'll convert back to org-modish. Then you'll have *bold* and /italics/ and such. '
+**** If they put in "&lt;" or "&gt;", then they just forfeighted org back-conversion. boo hoo. Otherwise (as long as there's nothing else funny going on), I'll convert back to org-modish. Then you'll have *bold* and /italics/ and such. '
   :PROPERTIES:
   :id: 51ad799ccf94219521000014
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
@@ -602,7 +620,7 @@
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-** Because I like them. I like them a lot. So "`ref`s" will be linked to lds.org. Mouseover will popover the text. "`ref`<s" is expanded to the scipture. And it will be contained in something like a "<span class='srcipture'>" tag.'
+** Because I like them. I like them a lot. So "`ref`s" will be linked to lds.org. Mouseover will popover the text. "`ref`&lt;s" is expanded to the scipture. And it will be contained in something like a "&lt;span class='srcipture'&gt;" tag.'
   :PROPERTIES:
   :id: 51ad799ccf94219521000063
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)

@@ -56,4 +56,4 @@ io.sockets.on('connection', function (socket) {
   settings.attach(socket);
   listen(socket);
 });
-
+io.set('log level', 0);

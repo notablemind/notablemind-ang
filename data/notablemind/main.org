@@ -87,11 +87,11 @@ TODO | DONE
 :CATEGORY: category
 ? :ORDERED:
 **** In the body
-CLOCK: [timestamp] => HH:MM
-CLOCK: [timestamp]--[timestamp] => HH:MM
-DEADLINE: <timestamp>
-SCHEDULED: <timestamp>
-CLOSED: <timestamp>
+CLOCK: [timestamp] =&gt; HH:MM
+CLOCK: [timestamp]--[timestamp] =&gt; HH:MM
+DEADLINE: &lt;timestamp&gt;
+SCHEDULED: &lt;timestamp&gt;
+CLOSED: &lt;timestamp&gt;
 
 Time stamps:
 DATE = YYYY-MM-DD DAYNAME
@@ -103,10 +103,10 @@ REPEATER follows the patter:
     UNIT is a character among h (hour), d (day), w (week), m (month), y (year).
     MARK, VALUE and UNIT are not separated by whitespace characters.
 
-<DATE TIME REPEATER>                         (active)
+&lt;DATE TIME REPEATER&gt;                         (active)
 [DATE TIME REPEATER]                         (inactive)
-<DATE TIME REPEATER>--<DATE TIME REPEATER>   (active range)
-<DATE TIME-TIME REPEATER>                    (active range)
+&lt;DATE TIME REPEATER&gt;--&lt;DATE TIME REPEATER&gt;   (active range)
+&lt;DATE TIME-TIME REPEATER&gt;                    (active range)
 [DATE TIME REPEATER]--[DATE TIME REPEATER]   (inactive range)
 [DATE TIME-TIME REPEATER]                    (inactive range)
 
@@ -132,8 +132,8 @@ If it's previewable, and preview-inline is true, just stick it in there.
 :asker: @person
 *** todo
 :type: todo
-:deadline: <date>
-:completed: <date>
+:deadline: &lt;date&gt;
+:completed: &lt;date&gt;
 should I just manage the status via tags? hmmm
 :status: ?? 
 *** decide (a decision needs to be made). meybe call this choose instead.
@@ -179,7 +179,7 @@ scripture awesomeness) can't really be captured by rst or md. It
 would need to be html. Hmmm... but typing on the backend would be
 much more awesome in rst or md. or org.
 *** Well, since I don't let people start with wierd characters
-I could always check. And if the text starts with <div>, then it's
+I could always check. And if the text starts with &lt;div&gt;, then it's
 html. Otherwise, it's org. (mk maybe rst. jury's still out).
 
 * error handling
@@ -193,7 +193,7 @@ no tags to be found) with '. And then I'll strip it off on read. If
 there are tags defined, then the "taglikes" at the end of their stuff
 won't be confusing.
 *** prevent HTMLage
-If they put in "<" or ">", then they just forfeighted org
+If they put in "&lt;" or "&gt;", then they just forfeighted org
 back-conversion. boo hoo. Otherwise (as long as there's nothing else
 funny going on), I'll convert back to org-modish. Then you'll
 have *bold* and /italics/ and such. 
@@ -318,8 +318,8 @@ items. I feel like that would be cool.
 * Scriptures
 Because I like them. I like them a lot.
 So "`ref`s" will be linked to lds.org. Mouseover will popover the
-text. "`ref`<s" is expanded to the scipture. And it will be contained
-in something like a "<span class='srcipture'>" tag.
+text. "`ref`&lt;s" is expanded to the scipture. And it will be contained
+in something like a "&lt;span class='srcipture'&gt;" tag.
 * Links
 - custom "directives"? alles in markdown, I think is best. or maybe
   rst. Looks like markdown doesn't support custom directives

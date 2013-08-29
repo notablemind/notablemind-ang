@@ -1,3 +1,21 @@
+* :whiteboard: 10 (100 200) (0 50) (10 20 - 100) (350 400 200 -)'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000071
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** // first item == grid size'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000072
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
+** // (x y [width] [height]) - is auto'
+  :PROPERTIES:
+  :id: 51ad7b980f6f5c5830000073
+  :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
+  :END:
 * data format'
   :PROPERTIES:
   :id: 51ad7b980f6f5c5830000001
@@ -160,7 +178,7 @@
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-** update/slugs/oid <- json : change an item'
+** update/slugs/oid &lt;- json : change an item'
   :PROPERTIES:
   :id: 51ad7b980f6f5c583000001c
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
@@ -172,7 +190,7 @@
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-** add <- json, parent, position : add an item'
+** add &lt;- json, parent, position : add an item'
   :PROPERTIES:
   :id: 51ad7b980f6f5c583000001e
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
@@ -202,13 +220,13 @@
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-** attach/slugs/oid <- raw data...'
+** attach/slugs/oid &lt;- raw data...'
   :PROPERTIES:
   :id: 51ad7b980f6f5c5830000023
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :END:
-** move/slugs/oid <- new slugs, new parent, new order'
+** move/slugs/oid &lt;- new slugs, new parent, new order'
   :PROPERTIES:
   :id: 51ad7b980f6f5c5830000024
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
