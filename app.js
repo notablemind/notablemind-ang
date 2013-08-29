@@ -11,6 +11,7 @@ var express = require('express')
 
   , routes = require('./routes')
   , settings = require('./routes/settings')
+  , listen = require('./listen')
   , org = require('org-lite');
 
 // all environments
@@ -38,7 +39,7 @@ app.get('/json', routes.index);
 // app.get('/users', user.list);
 var index = function(req, res) {
   res.send(fs.readFileSync(path.join(__dirname, 'static', 'index.html')).toString('utf8'));
-}
+};
 
 app.get('/', index);
 
@@ -53,5 +54,6 @@ server.listen(app.get('port'), function(){
 
 io.sockets.on('connection', function (socket) {
   settings.attach(socket);
+  listen(socket);
 });
 

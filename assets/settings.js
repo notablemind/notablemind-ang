@@ -3,23 +3,23 @@
 
 var defaultSettings = require('./defaultSettings')
   , angularSettings = require('angular-settings')
-  , settings = require('settings')
+  , settings = require('settings')()
   , app = require('./angular');
 
-angularSettings.factory('settings', settings.getSettings());
-
-angularSettings.config('notablemind', {
-  name: 'default',
-  sub: 'note',
-  pages: ['nav']
+angularSettings.config('notablemind', 'default', {
+  title: 'Navigation',
+  name: 'nav',
+  settings: ['note.nav.*']
 });
 
 app.controller('Settings', function Settings($scope, $routeParams, db) {
   console.log('Settings init');
 });
 
-app.run(function($route, $rootScope) {
-  socket.emit('settings:load', {});
+app.factory('settings.sync', ['$route', '$rootScope', 'socket', function ($route, $rootScope, socket) {
+  socket.on('connect', function () {
+    socket.emit('settings:load', {});
+  });
   socket.on('settings:load', function (json) {
     if (json === false) {
       return socket.emit('settings:save', settings.getSettings().json());
@@ -32,4 +32,4 @@ app.run(function($route, $rootScope) {
   socket.on('error', function (data) {
     console.log('Error from server:', data);
   });
-});
+}]);

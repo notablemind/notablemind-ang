@@ -1,8 +1,11 @@
 
 var routes = {}
-  , request = require('superagent');
+  , request = require('superagent')
 
-var app = module.exports = angular.module('notablemind', ['ngResource', 'note', 'settings'])
+  , note = require('note')
+  , angularSettings = require('angular-settings');
+
+var app = module.exports = angular.module('notablemind', ['ngResource', note.name, angularSettings.mod.name])
   .config(['$routeProvider', '$locationProvider', function(route, location) {
     Object.keys(routes).forEach(function (path) {
       route.when(path, routes[path]);
@@ -40,6 +43,7 @@ function promise(getter, next) {
   };
 }
 
+/*
 app.factory('db', function() {
   var req = request.get('/cached.json');
   return promise(req.end.bind(req), function (err, data) {
@@ -48,4 +52,5 @@ app.factory('db', function() {
     }
   });
 });
+*/
 

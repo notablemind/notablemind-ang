@@ -24,7 +24,27 @@ Object.keys(pages.routes).forEach(function(path) {
   app.addRoute(path, toCamelCase(ctrl) + '.html', ctrl);
 });
 
-app.controller('NoteList', function NoteList($scope, $routeParams, db) {
+// TODO: use shoe.js
+app.factory('socket', function () {
+  return io.connect(location.protocol + '//' + location.hostname);
+});
+
+app.factory('events', function () {
+  var Emitter = require('emitter');
+  return new Emitter();
+});
+
+app.factory('sync', ['socket', 'events', function (socket, events) {
+  var Sync = require('sync-notes');
+  return new Sync(socket, events);
+}]);
+
+app.run(['sync', 'socket', 'settings.sync', function (sync, socket, settings) {
+  var monitor = new Monitor('#connectivity');
+  monitor.attach(socket);
+}]);
+
+app.controller('NoteList', ['$scope', '$routeParams', 'events', 'sync', function ($scope, $routeParams, events, sync) {
   $scope.note = {
     "title": 'All your mind. All your notes.',
     "tags": [],
@@ -34,19 +54,19 @@ app.controller('NoteList', function NoteList($scope, $routeParams, db) {
     },
     "children": []
   };
-  console.log('getting cached');
-  db(function(db) {
-    $scope.note.children = db;
+  function onChange(db) {
+    if (db) {
+      $scope.db = db;
+      $scope.note.children = db;
+    }
+    $scope.$digest();
+  }
+  events.on('db:changed', onChange);
+  $scope.$on('$destroy', function () {
+    events.off('db:changed', onChange);
   });
-  $scope.events = new ScopedEvents()
-    .on('title:change', function (evt) {
-      console.log('Changed title', evt);
-    })
-    .on('move:up', function (evt) {
-      console.log('moved up', evt);
-    });
-  
-});
-
-var monitor = new Monitor('#connectivity');
-monitor.attach(socket);
+  if (sync.db) {
+    $scope.db = sync.db;
+    $scope.note.children = sync.db;
+  }
+}]);

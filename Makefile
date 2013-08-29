@@ -42,7 +42,14 @@ watch-test:
 watch-cov:
 	supervisor -n exit -w lib,test -e txt,js -x make -- test-cov -B -s
 
-test:
+test: lint test-only
+
+lintfiles := *.js *.json assets
+
+lint:
+	@./node_modules/.bin/jshint --extra-ext .js,.json --verbose $(lintfiles)
+
+test-only:
 	@echo "No tests yet"
 
 oldtest: lib
