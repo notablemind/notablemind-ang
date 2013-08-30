@@ -136,75 +136,89 @@
   :modified: Thu Aug 29 2013 23:17:20 GMT-0600 (MDT)
   :id: 52202ae03a98c748b1000011
   :END:
-* users'
+* NotableMind'
+  :PROPERTIES:
+  :created: Fri Aug 30 2013 08:53:46 GMT-0600 (MDT)
+  :modified: Fri Aug 30 2013 08:53:46 GMT-0600 (MDT)
+  :id: 5220b1fa3a98c76648000002
+  :END:
+** users'
   :PROPERTIES:
   :id: 51ad799ccf94219521000001
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-** For the moment, I won't have anything hosted -- you run it locally. I can make it pretty easy to run locally, though. Could I package it up to run on windows? Looks like Node'll install just fine!'
+*** For the moment, I won't have anything hosted -- you run it locally. I can make it pretty easy to run locally, though. Could I package it up to run on windows? Looks like Node'll install just fine!'
   :PROPERTIES:
   :id: 51ad799ccf94219521000002
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-*** http://dailyjs.com/2012/05/03/windows-and-node-1/'
+**** http://dailyjs.com/2012/05/03/windows-and-node-1/'
   :PROPERTIES:
   :id: 51ad799ccf94219521000003
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-** auth'
+*** auth'
   :PROPERTIES:
   :id: 51ad799ccf94219521000004
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-*** Maybe let people start outlining before they're even logged in. Give them a taste, so they can get hooked ;)'
+**** Maybe let people start outlining before they're even logged in. Give them a taste, so they can get hooked ;)'
   :PROPERTIES:
   :id: 51ad799ccf94219521000005
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-* Major Items'
+** Major Items'
   :PROPERTIES:
   :id: 51ad799ccf94219521000006
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-** Making something a major item will make the font size bigger, I imagine.'
+*** Making something a major item will make the font size bigger, I imagine.'
   :PROPERTIES:
   :id: 51ad799ccf94219521000007
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-** they are allowed to be used as tags.'
+*** they are allowed to be used as tags.'
   :PROPERTIES:
   :id: 51ad799ccf94219521000008
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-*** Ha! that way, not everything can be a tag. Also, non-major items don't need slugs! Right? Because they can't be referenced in any way. Pretty sure. This is *awesome*.'
+**** Ha! that way, not everything can be a tag. Also, non-major items don't need slugs! Right? Because they can't be referenced in any way. Pretty sure. This is *awesome*.'
   :PROPERTIES:
   :id: 51ad799ccf94219521000009
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-** you can view them alone'
+*** you can view them alone'
   :PROPERTIES:
   :id: 51ad799ccf9421952100000a
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-*** whiteboard'
+**** whiteboard'
   :PROPERTIES:
   :id: 51ad799ccf9421952100000b
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-* columns'
+** columns'
   :PROPERTIES:
   :id: 51ad799ccf9421952100000c
+  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
+  :END:
+** Formal Backend'
+  :PROPERTIES:
+  :type: major
+  :id: 1
+  :slug: formal-backend
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
@@ -225,14 +239,6 @@
   :id: 51ad7b980f6f5c5830000073
   :created: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:31:04 GMT-0600 (MDT)
-  :END:
-* Formal Backend'
-  :PROPERTIES:
-  :type: major
-  :id: 1
-  :slug: formal-backend
-  :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
-  :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
 * error handling'
   :PROPERTIES:
@@ -758,7 +764,7 @@
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :modified: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
   :END:
-** Because I like them. I like them a lot. So "`ref`s" will be linked to lds.org. Mouseover will popover the text. "`ref`&lt;s" is expanded to the scipture. And it will be contained in something like a "&lt;span class='srcipture'&gt;" tag.'
+** Because I like them. I like them a lot. So "`ref`s" will be linked to lds.org. Mouseover will popover the text. "`ref`&lt;s" is expanded to the scipture. And it will be contained in something like a "&lt;span class='scripture'&gt;" tag.'
   :PROPERTIES:
   :id: 51ad799ccf94219521000063
   :created: Mon Jun 03 2013 23:22:36 GMT-0600 (MDT)
