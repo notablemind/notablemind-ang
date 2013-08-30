@@ -1,3 +1,141 @@
+* Current Bugs'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 22:56:40 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 22:56:40 GMT-0600 (MDT)
+  :id: 522026083a98c7266a000001
+  :END:
+** settings don't save'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:22:15 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:22:15 GMT-0600 (MDT)
+  :id: 52202c073a98c76648000000
+  :END:
+** editing'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 22:58:00 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 22:58:00 GMT-0600 (MDT)
+  :id: 522026583a98c748b1000000
+  :END:
+*** I think I'm saving too often.'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:18:27 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:18:27 GMT-0600 (MDT)
+  :id: 52202b233a98c748b1000012
+  :END:
+*** joining two nodes, cursor position is lost'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:11:00 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:11:00 GMT-0600 (MDT)
+  :id: 522029643a98c748b100000d
+  :END:
+*** down and up don't work in a multiline situation.'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:10:38 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:10:38 GMT-0600 (MDT)
+  :id: 5220294e3a98c748b100000c
+  :END:
+*** return in the middle of a node, should go on the same level, and should take the children'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 22:59:09 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 22:59:09 GMT-0600 (MDT)
+  :id: 5220269d3a98c748b1000003
+  :END:
+*** delete node, all children disappear'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 22:58:53 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 22:58:53 GMT-0600 (MDT)
+  :id: 5220268d3a98c748b1000002
+  :END:
+*** &lt;left&gt; w/ whitespace in front'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 22:58:10 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 22:58:10 GMT-0600 (MDT)
+  :id: 522026623a98c748b1000001
+  :END:
+** File format'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:19:50 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:19:50 GMT-0600 (MDT)
+  :id: 52202b763a98c714ad000000
+  :END:
+*** Could I get rid of the trailing "'" in all cases where there are no ":" at the end? b/c it looks awkward'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:22:19 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:22:19 GMT-0600 (MDT)
+  :id: 52202c0b3a98c76648000001
+  :END:
+** not super robust'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:00:23 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:00:23 GMT-0600 (MDT)
+  :id: 522026e73a98c748b1000006
+  :END:
+** I'd like to have settings &amp; data saved to localStorage if the backend disconnects. Then we could have fully offline awesome.'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 22:59:45 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 22:59:45 GMT-0600 (MDT)
+  :id: 522026c13a98c748b1000005
+  :END:
+** refactoring'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:01:03 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:01:03 GMT-0600 (MDT)
+  :id: 5220270f3a98c748b1000009
+  :END:
+*** org-lite is attrocious'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:00:39 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:00:39 GMT-0600 (MDT)
+  :id: 522026f73a98c748b1000007
+  :END:
+*** also, I'd like to have the list management be separate'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:00:45 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:00:45 GMT-0600 (MDT)
+  :id: 522026fd3a98c748b1000008
+  :END:
+** Ok so it looks like the problem is that new items are just put at the top'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 22:59:40 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 22:59:40 GMT-0600 (MDT)
+  :id: 522026bc3a98c748b1000004
+  :END:
+** features'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:01:18 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:01:18 GMT-0600 (MDT)
+  :id: 5220271e3a98c748b100000a
+  :END:
+*** markdown mode! enableable via a setting; I want to edit things in markdown. This means that on focus, the contents are converted from html to markdown, and on blur they are converted back. I imagine I want a directive that will do just that.'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:16:06 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:16:06 GMT-0600 (MDT)
+  :id: 52202a963a98c748b1000010
+  :END:
+*** But I think it would be useful to have a "selection mode", when you have the whole item selected. It would be highlighted light blue or something, or maybe have an outline. Anyway, you could select multiple items that way. This is more of a stretch goal though, not super critical'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:14:41 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:14:41 GMT-0600 (MDT)
+  :id: 52202a413a98c748b100000f
+  :END:
+*** VIM mode!!! I would love that so much. So basically, I would support hjkl, wbd...hmm }{? gg probably not marks. I think I might need mousetrap for this though.'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:11:19 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:11:19 GMT-0600 (MDT)
+  :id: 522029773a98c748b100000e
+  :END:
+*** should everything be piped through html-md and marked? So the backend really only stores markdown... yeah that sounds like a good thing.'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:01:23 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:01:23 GMT-0600 (MDT)
+  :id: 522027233a98c748b100000b
+  :END:
+** hmm but I think I've got a pretty decent working prototype going. Then I can really get into the juicy bits.'
+  :PROPERTIES:
+  :created: Thu Aug 29 2013 23:17:20 GMT-0600 (MDT)
+  :modified: Thu Aug 29 2013 23:17:20 GMT-0600 (MDT)
+  :id: 52202ae03a98c748b1000011
+  :END:
 * users'
   :PROPERTIES:
   :id: 51ad799ccf94219521000001
