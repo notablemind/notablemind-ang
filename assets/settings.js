@@ -12,7 +12,7 @@ angularSettings.config('notablemind', 'default', {
   settings: ['note.nav.*']
 });
 
-app.controller('Settings', function Settings($scope, $routeParams, db) {
+app.controller('Settings', function Settings($scope, $routeParams) {
   console.log('Settings init');
 });
 
